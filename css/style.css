@@ -1,0 +1,271 @@
+h1 {
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-size: 50px;
+	color: #192331;
+	text-align: center;
+	margin-bottom: 10px;
+
+letter-spacing: 3px;
+
+}
+
+h2 {
+	color: #F84F4B;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 50px;
+  font-family: 'Contrail One', cursive;
+  letter-spacing: 1px;
+}
+
+.container {
+        margin: 0 auto;
+        width: 1200px;
+}
+
+#menu {
+	display: none;
+}
+
+body {
+	background: url(../img/bg5.jrpg) #f9f9f9;
+  background-attachment: scroll;
+	/*font-family: 'Dosis', sans-serif;*/
+	font-family: 'Contrail One', cursive;
+}
+
+html, body {
+	margin: 0;
+	padding: 0; 
+}
+
+.myface {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 3px solid #F84F4B;
+  border-radius: 50%;
+  margin: 0 auto; 
+}
+
+
+.section {
+	width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.main-page {
+	text-align: center;
+	font-weight: bold;
+	padding-top: 200px;
+	padding-right: 10px;
+}
+
+.arrow {
+	text-decoration: none;
+	color: #192331;
+	font-size: 25px;
+}
+
+ .blink { 
+    -webkit-animation: blink 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation: blink 3s;
+    animation-iteration-count: infinite;
+   }
+   @-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+   }
+   @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+   }
+
+.work-example {
+	text-align: center;
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	margin: 10px;
+  box-shadow: 0 0 5px #999;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.storka {
+  position: absolute;
+  background: rgba(255, 255, 255, 0);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: 0.2s;
+}
+  
+.work-example:hover .storka {
+  background: rgba(255, 255, 255, 1);
+}
+
+.work-example:hover h3, .work-example:hover h4, 
+.work-example:hover .type-site, .work-example:hover i{
+  opacity: 1;
+}
+
+.work-example:hover {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+}
+
+.work-example img {
+  width: 100%;
+}
+
+.opisanie {
+  position: absolute;
+  text-align: left;
+  padding: 20px;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  border: 2px solid #F84F4B;
+  transition: 1s;
+}
+
+.work-example:hover .opisanie {
+  opacity: 1;
+}
+
+h3 {
+  text-transform: uppercase;
+  opacity: 0;
+  margin: 0;
+  color: #192331;
+  font-size: 30px;
+}
+
+h4 {
+  font-weight: normal;
+  opacity: 0;
+  margin: 0;
+  color: #C4C2B9;
+  font-size: 20px;
+}
+
+.name-slaid {
+  color: #F84F4B;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+
+}
+
+
+.opisanie i {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #F84F4B;
+  font-size: 30px;
+  padding: 10px;
+  opacity: 0;
+}
+
+.type-site {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+  color: #192331;
+  position: absolute;
+  bottom: 0;
+}
+
+.copyright {
+  text-align: center;
+  opacity: 0.25;
+  margin-top: 20px;
+}
+
+.contact {
+  text-align: center;
+  color: #192331;
+}
+
+
+.phone i, .mail i, .skype i {
+  color: #F84F4B;
+}
+
+.phone, .mail, .skype {
+  margin-right: 30px;
+}
+
+.contact-form {
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #888;
+  margin: 10px auto 40px;
+  padding: 20px;
+}
+
+input, textarea {
+  border-radius: 15px;
+  color: #192331;
+  font-family: 'Contrail One', cursive;
+  box-shadow: none;
+  display: block;
+  border: 1px solid rgba(25, 35, 49, 0.25);
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+input:focus {
+    border: 1px solid rgba(25, 35, 49, 1);
+    outline: none;
+}
+
+
+
+.contact-form h3 {
+  opacity: 1;
+  text-transform: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid #F84F4B;
+  color: #F84F4B;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-align: center; 
+  background: #fff;
+  font-family: 'Contrail One', cursive;
+  transition: 0.2s;
+  width: 50%;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+button:hover {
+  background: #F84F4B;
+  color: #fff;
+  
+
+}
