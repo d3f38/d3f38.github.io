@@ -1,205 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Инвент</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/magic.css">
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-
-
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/my-slider.css">
-	<script src="js/ism-2.2.min.js"></script>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<!-- задаем параметры области просмотра на мобильных устройствах -->
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="desciption" content="">
-	<meta name="keywords" content="">
-	<link rel="icon" type="image/png" href="img/favicon.jpg" />
-
+	<title>Aleksandr Bylkov</title>
+	<script type="text/javascript" src="jquery-1.6.min.js"></script>
+   
 </head>
 <body>
-	<header>
-		<div class="head container">
-			<a class="logo" href="index.html" class="retroshadow"><img src="img/logo.jpg"></a>
-			<img style="width: 700px;" src="img/sr.jpg">
-			<div class="language">
-				<ul>
-					<li><a class="lang" href="#">RU</a></li>
-					<li><a class="lang" href="#">EN</a></li>
-					<li><a class="lang" href="#">CN</a></li>
-				</ul>	
-			</div>
-		</div>
-		<div class="container">	
-			<nav class="menu">
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#company">О компании</a></li>
-					<li><a href="#">Деятельность  <i class="fas fa-angle-down"></i></a>
-						<ul>
-							<li><a href="#a">Очистка поверхности</a> 
-								<ul>
-									<li><a href="#b">Криогенный бластинг</a></li>
-									<li><a href="#">Лазерная абляция</a></li>
-									<li><a href="#">Сухой лед</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Организация выставок</a></li>
-							<li><a href="#">Рекультивация и восстановление почвы</a></li>
-							<li><a href="#v">Медицинское оборудование</a></li>
-							<li><a href="#">Светодиодные системы</a></li>
-						</ul>	
-					</li>	
-					<li><a href="#">Проекты</a></li>	
-					<li><a href="#">Партнеры</a></li>	
-					<li><a href="#">Контакты</a></li>
-<!-- 					<li></li>
-					<li></li>
-					<li>
-						<a class="lang" href="#">RU</a>
-						<a class="lang" href="#">EN</a>
-						<a class="lang" href="#">CN</a>
-					</li> -->
-				</ul>
-			</nav>
+	<ul id="menu">
+        <li data-menuanchor="block1"><a href="#block1">Блок 1</a></li>
+        <li data-menuanchor="block2"><a href="#block2">Блок 2</a></li>
+        <li data-menuanchor="block3"><a href="#block3">Блок 3</a></li>
+        <li data-menuanchor="block4"><a href="#block4">Блок 4</a></li>
+    </ul>
+
+	<div id="fullpage">
+		<div class="section main-page" data-anchor="block1">
+			<div class="myface"></div>
+			<h1>Aleksandr Bylkov</h1>
+			<h2>frontend developer</h2>
+			<a class="arrow blink" href="#block2" ><i class="fas fa-angle-down"></i></a>
 
 		</div>
-	</header>
-<!--
-	<div class="ism-slider" data-play_type="loop" id="main-slider">
-		<ol>
-			<li><img src="img/slaid1.jpg"></li>
-			<li><img src="img/slaid2.jpg"></li>
-			<li><img src="img/slaid3.jpg"></li>
-			<li><img src="img/slaid4.jpg"></li>
-			<li><img src="img/slaid5.jpg"></li>
-		</ol>
-	</div>
- -->
- 	
-	<main>
-		
-		<div class="services">
+		<div class="section work" data-anchor="block2">
+			<div class="name-slaid">works</div>
 			<div class="container">
-				<h1>ИНВЕНТ - Промышленные технологии. Анализ, Проектирование, Внедрение</h1>
-				<!-- <h2>Направления деятельности</h2> -->
-				<div class="services-example">
-					<div class="example">
-						<img src="img/ex1.jpg">
-						<span class="example-name">Криогенный бластинг</span>
-					</div>
-					<div class="example">
-						<img src="img/ex2.jpg">
-						<span class="example-name">Лазерная абляция</span>
-					</div>
-					<div class="example">
-						<img src="img/ex3.jpg">
-						<span class="example-name">Рекультивация и восстановление почвы</span>
-					</div>
-					<div class="example">
-						<img src="img/ex4.jpg">
-						<span class="example-name">Медицинское оборудование</span>
-					</div>
-					<div class="example">
-						<img src="img/ex5.jpg">
-						<span class="example-name">Светодиодные системы</span>
-					</div>
-					<div class="example">
-						<img src="img/ex6.jpg">
-						<span class="example-name">Организация выставок</span>
-					</div>
-				</div>
-				<br>	
-			</div>
-		</div>	
-		<div class="company">
-			<div class="container">	
-				<div class="description">
-					<h2 id="company">О компании</h2>
+				<a href="#" class="work-example">
+					<img src="img/1.png">
+					<div class="storka magictime puffIn"></div>
 					<div class="opisanie">
-						Группа компаний «Инвент» - это инновационные разработки в различных сферах деятельности, которые имеют серьезную научную основу и практику внедрения, применения на производствах и предприятиях как в России, так и за рубежом. <br>
-						Основа нашей деятельности - это научный потенциал и возможность его применения для более эффективной работы различных предприятий и отраслей промышленности. <br>
-						Многолетние устоявшиеся связи с нашими партнерами в Европе, США и ОАЭ позволяют нам реализовывать проекты любого масштаба и сложности: от анализа и выявления решения поставленной задачи, до ее практической реализации в качестве проекта и физического осуществления.
+						<h3>Ann Chvorostyan</h3>
+						<h4>Online portfolio</h4>
+						<i class="fas fa-link"></i>
+						<p class="type-site">Proffesional website</p>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="partners">
-			<div class="container">
-				<img src="img/logo1.jpg">
-				<img src="img/logo2.jpg">
-				<img src="img/logo3.jpg">
-				<img src="img/logo4.jpg">
-				<img src="img/logo5.jpg">
-				<img src="img/logo6.jpg">
-			</div>
-		</div>	
-	
-		<div class="works">
-			<div class="container">
-				<h2>Проекты</h2>
-			
-				<div class="work-example">	
-					<div class="work-box">
-						<img src="img/sample1.jpg">
-						
+				</a>
+				<a href="#" class="work-example">
+					<img src="img/2.png">
+					<div class="storka"></div>
+					<div class="opisanie">
+						<h3>Quotes</h3>
+						<h4>Themplate</h4>
+						<i class="fas fa-link"></i>
+						<p class="type-site">Landing</p>
 					</div>
-					<div class="work-box">
-						<img src="img/sample2.jpg">
-						
+				</a>		
+				<a href="#" class="work-example">
+					<img src="img/3.png">
+					<div class="storka"></div>
+					<div class="opisanie">
+						<h3>Invent</h3>
+						<h4>Company group</h4>
+						<i class="fas fa-link"></i>
+						<p class="type-site">Corporate</p>
 					</div>
-					<div class="work-box">
-						<img src="img/sample3.jpg">
-						
+				</a>	
+				<a href="#" class="work-example">
+					<div class="storka"></div>
+					<img src="img/4.png">
+					<div class="opisanie">
+						<h3>MyFolio</h3>
+						<h4>Themplate</h4>
+						<i class="fas fa-link"></i>
+						<p class="type-site">Landing</p>
 					</div>
-					<div class="work-box">
-						<img src="img/sample4.jpg">
-						
+				</a>	
+				<a href="#" class="work-example">
+					<div class="storka"></div>
+					<img src="img/5.png">
+					<div class="opisanie">
+						<h3>Mini</h3>
+						<h4>Themplate</h4>
+						<i class="fas fa-link"></i>
+						<p class="type-site">Landing</p>
 					</div>
-					<div class="work-box">
-						<img src="img/sample5.jpg">
-						
+				</a>	
+				<a href="#" class="work-example">
+					<div class="storka"></div>
+					<img src="img/6.png">
+					<div class="opisanie">
+						<h3>Madison</h3>
+						<h4>Themplate</h4>
+						<i class="fas fa-link"></i>
+						<p class="type-site">Corporate</p>
 					</div>
-					<div class="work-box">
-						<img src="img/sample6.jpg">
-						
-					</div>
-					<div class="work-box">
-						<img src="img/sample7.jpg">
-						
-					</div>
-					<div class="work-box">
-						<img src="img/sample8.jpg">
-						
-					</div>
-				</div>
-				<div class="btn"><a href="#">подробнее</a></div>
+				</a>
 			</div>	
-		</div>	
-
-	</main>
-	<footer>
-		<div class="container">
-			<div class="footer-menu">
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#company">О компании</a></li>
-					<li><a href="#">Деятельность</a></li>	
-					<li><a href="#">Проекты</a></li>	
-					<li><a href="#">Партнеры</a></li>	
-					<li><a href="#">Контакты</a></li>
-				</ul>
+		</div>
+		<div class="section contact" data-anchor="block3">
+			<div class="name-slaid">contact me</div>
+			
+			<div class="container">
+				<div class="contact-form">
+					<h3>Send me a message</h3>
+					<input type="" name="" placeholder="First Name">
+					<input type="" name="" placeholder="E-mail">
+					<input type="" name="" placeholder="Phone">
+					<textarea type="" name="" placeholder="Message" rows="4"></textarea>
+					<button>submit</button>
+				</div>
+				<span class="phone">
+					<i class="fas fa-phone-square"></i> +7 (911) 971-39-74
+				</span>	
+				<span class="mail">
+					<i class="fas fa-envelope"></i> bylkov.alex@yandex.ru
+				</span>
+				<span class="skype">
+					<i class="fab fa-skype"></i> bylkov.alex
+				</span>
+				
+				
 			</div>
-			>
-			<div class="adress"><p>195257, Россия, Санкт-Петербург,<br>
-				ул. Морская, д. 66, лит. А<br>
-				E-Mail: info@invent.org.ru<br>
-				тел. 999555</p>
-			</div><div class="copyright">&copy; 2013 by "INVENT ". All Rights reserved.</div
-		</div>	
-		
-	</footer>
+			<div class="copyright">&copy 2018 - Aleksandr Bylkov. All rights reserved</div>
+		</div>
+	</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script  src="js/index.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['block1', 'block2', 'block3', 'block4'],
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 1000
+            });
+        });
+    </script>
+
+    
 </body>
 </html>
