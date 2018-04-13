@@ -63,8 +63,8 @@ body {
 	background: #fff;
 	margin: 0;
 	padding-top: 25px;
-		color: #333;
-	}
+	color: #333;
+}
 
 header {
 
@@ -97,9 +97,6 @@ header .container {
 }
 
 .menu {
-
-/*	position: relative;
-	top: 35px;*/
 	margin-top: 10px;
 	background-color: #333;
 	width: 1100px;
@@ -130,6 +127,10 @@ header .container {
 	padding-top: 5px; 
 }
 
+.language > ul > li > a:hover {
+	background-color: rgba(182, 0, 23,0.2); 
+}
+
 .menu > ul {
 	margin: 0;
 	padding: 0;
@@ -139,6 +140,7 @@ header .container {
 	display: inline-block;
 	list-style: none;
 	position: relative;
+	transition: 0.1s;
 
 }
 
@@ -160,7 +162,7 @@ header .container {
 	width: 370px;
 	text-align: left;
 	padding: 0;
-	top: 100%;
+	top: 107%;
 	left: 0%;
 	visibility: hidden;
 	border-top: 3px solid #b60017;
@@ -210,6 +212,7 @@ main {
 	padding-left: 0px;
 	transition: 0.3s;
 	color: #333;
+	display: block;
 }
 
 .menu > ul > li > ul > li:hover > a, .menu > ul > li > ul > li > ul > li:hover > a {
@@ -219,11 +222,11 @@ main {
 .menu > ul > li > ul > li:hover, .menu > ul > li > ul > li > ul > li:hover {
 	background-color: rgba(182, 0, 23, 0.3);
 }
+
 .menu > ul > li:hover > ul {	
 	visibility: visible;
 	opacity: 1;
 	transform: translateY(-5px);
-
 }
 
 .menu > ul > li > ul > li:hover > ul {
@@ -260,7 +263,7 @@ main {
 	font-size: 17px;
 	text-align: justify;
 	float: right;
-
+	padding-top: 5px;
 }
 
 .services-example {
@@ -397,14 +400,14 @@ main {
 }
 
 footer {
-	background-color: #fff;
+	background-color: #333;
 	padding: 5px;
 }
 
 footer .adress {
 	width: 300px;
 	text-align: right;
-	color: #333;
+	color: #fff;
 	float: right;
 }
 
@@ -417,7 +420,7 @@ footer .adress {
 
 footer .container {
 	text-align: left;
-	border-top: 5px solid #b60017;
+
 }
 
 
@@ -450,20 +453,21 @@ footer .container .footer-menu > ul > li:nth-child(3) {
 
 footer .container .footer-menu >ul > li > a{
 	text-decoration: none;
-	color: #333;
-
+	color: #fff;
+	border-bottom: 2px solid transparent;
+	transition: 0.1s;
 }
 
 footer .container .footer-menu > ul > li > a:hover {
-	border-bottom: 2px solid #b60017;
+	border-bottom: 2px solid #fff;
 } 
 
 .copyright {
-	opacity: 0.9;
+	opacity: 0.8;
 	font-size: 15px;
 	padding-top: 30px;
 	text-align: left;
-	color: #333;
+	color: #fff;
 	width: 700px;
 	float: left;
 }
