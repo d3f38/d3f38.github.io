@@ -1,0 +1,467 @@
+*, *::before, *::after {
+	/* теперь паддинги и бордеры не будут увеличивать ширину и высоту */
+	box-sizing: border-box;
+}
+
+body {
+	font: 16px/1.9 'Open Sans', sans-serif;
+	color: #7e8287;
+	padding-top: 60px;
+}
+
+header {
+	background: #02918c;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.container {
+	width: 1145px;
+	margin: 0 auto;
+}
+/*Универсальный clearfix*/
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.logo {
+	width: 30%;
+	float: left;	
+	padding-top: 5px;
+}
+
+nav {
+	width: 70%;
+	float: left;
+	text-align: right;
+}
+
+nav a {
+	display: inline-block;
+	vertical-align: top;
+	padding: 19px 25px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	transition: 0.5s;
+}
+
+.logo a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.logo span {
+	color: #cfc91d;
+}
+
+nav a:hover {
+	background: rgba(0, 0, 0, 0.2);
+
+}
+
+main {
+	background: url(../images/bg.jpg) top center/cover;
+	// background-size: cover;
+	text-align: center;
+	color: #fff;
+	padding: 190px 0 200px;
+	line-height: 1.2;
+	position: relative;
+
+}
+
+h1 {
+	font-size: 68px;
+	text-transform: uppercase;
+	letter-spacing: 20px;
+	margin: 5px 0;
+}
+
+.first-title {
+	font-size: 30px;
+}
+
+.second-title {
+	font-size: 18px;
+}
+
+
+.bracket {
+	height: 25px;
+	background: url(../images/skobka.png) center no-repeat;
+	margin: 50px 0;
+}
+
+.yellow-btn {
+	display: inline-block;
+	text-decoration: none;
+	color: #0b1016;
+	background: #cfc91d;
+	padding: 15px 40px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: 0.5s;
+	border: 0;
+
+}
+
+.yellow-btn:hover {
+	background: #02918c;
+	color: #fff;
+}
+
+main::after {
+	content: '';
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+main .container {
+	z-index: 1;
+	position: relative;
+}
+
+.screen {
+	padding: 100px 0;
+	text-align: center;
+}
+
+h2 {
+	color: #02918c; 
+	font-size: 46px;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+	line-height: 1.2;
+}
+
+.tild span {
+	position: relative;
+	top: -1px;
+}
+.skills {
+	padding-top: 70px;
+}
+
+.skills article {
+	width: 25%;
+	display: inline-block;
+	/*чтобы избавиться от пробелов между блоками*/
+	margin-right: -4px;
+	font-size: 11px;
+	padding: 45px;
+	border-right: 1px solid #d9dbdb;
+}
+
+.skills h3 {
+	font-size: 16px;
+}
+
+.skills article:last-child {
+	border-right-color: transparent;
+}
+
+.screen-services {
+	background: #f0f0e8;
+	padding: 70px 0;
+	position: relative;
+}
+
+.screen-services::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../images/bg.jpg) left/cover;
+	opacity: 0.6;
+}
+
+.services-wrap {
+	width: 50%;
+}
+
+.services {
+	padding-top: 40px;
+} 
+
+.services article {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin-right: -4px;
+	font-size: 11px; 
+	padding: 0 110px 35px 0; 
+}
+
+.services h3 {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.services p {
+	margin: 10px 0;
+}
+
+.gallery figure {
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 -4px 0 0;
+	/*убираем отступы между строчками, 
+	т.к. у инлайн блоков отображается лайнхайт*/
+	line-height: 0;
+	position: relative;
+}
+
+.gallery img {
+	width: 100%;
+}
+
+.gallery figcaption {
+	opacity: 0;	
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	right: 30px;
+	bottom: 20px;
+	transition: 1s;
+	text-align: center;
+	transform: scaleY(0);
+	transform-origin: top;
+
+}
+
+.gallery figure:hover figcaption {
+	display: block;
+	background: rgba(2, 145, 140, 0.85);
+	font-size: 13px;
+	padding: 30px 40px;
+	opacity: 1;
+	transform: scaleY(1);
+}
+
+.gallery a {
+	color: #fff;
+	text-decoration: none;
+	line-height: 1.6;
+
+}
+
+.gallery h3 {
+	font-size: 16px;
+	margin: 10px;
+}
+
+.gallery p {
+	margin: 10px 0;
+}
+
+.contact-form {
+	background: #0b0b0b;
+	text-align: center;
+	padding: 50px 0 70px;
+}
+
+.contact-form textarea, .contact-form input {
+	display: block;
+	background: transparent;
+	width: 56%;
+	border: 0; 
+	outline: none;
+	color: #7e8287;
+	text-align: center;
+	border-bottom: 1px solid #898989;
+	padding: 15px 0; 
+	margin: 0 auto 40px;
+}
+
+.contact-form textarea {
+	width: 80%;
+	min-width: 80%;
+	max-width: 80%;
+	min-height: 50px;
+}
+
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+	text-transform: uppercase;
+} 
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+	border-bottom-color: #02918c;
+} 
+
+footer {
+	background: #000;
+	text-align: center;
+	color: #7e8287;
+	font-size: 12px;
+	padding: 30px 0 20px;
+}
+
+/* стили будут дейтсвовать если 
+ширина экрана меньше или равна 1160зч*/
+
+@media (max-width: 1160px) {
+	.container {
+		width: 940px;
+	}
+
+	.services article {
+		padding-right: 70px;
+	}
+
+	.gallery figure:hover figcaption {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 960px) {
+	.container {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.gallery figure {
+		width: 33.3%
+	}
+
+	.first-title {
+		font-size: 24px;
+	}
+	
+	h1 {
+		font-size: 40px;
+		letter-spacing: 10px;
+	}	
+
+	.second-title {
+		font-size: 16px;
+	}
+
+	.logo {
+		width: 25%;
+	}
+
+	nav {
+		width: 75%;
+	}
+
+	nav a {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.skills article {
+		width: 50%;
+		border-right: 0;
+	}
+
+	.services-wrap {
+		width: 70%;
+	}
+
+	.screen-services::after {
+		left: 70%;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo, nav {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+
+	nav a {
+		padding: 10px;
+	}
+	
+	header {
+		position: static;
+	}
+
+	body {
+		padding-top: 0;
+	}
+
+	main {
+		padding: 110px 0;
+	}
+
+	.first-title {
+		font-size: 16px;
+	}
+
+	h1 {
+		font-size: 24px;
+		letter-spacing: 3px;
+	}
+
+	.second-title {
+		font-size: 12px;
+	}
+
+	.screen {
+		padding: 50px 0;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+	
+	.skills {
+		padding-top: 30px;
+	}
+
+	.skills article {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.services-wrap {
+	width: 100%;
+	}
+
+	.screen-services::after {
+	display: none;
+	}
+
+	.services article {
+		width: 100%;
+		padding-right: 0; 
+	}
+
+	.gallery figure {
+		width: 50%;
+	}
+
+	.gallery figcaption {
+		display: none;
+	}
+
+	.contact-form input, .contact-form textarea {
+		width: 100%;
+		max-width: 100%;
+	} 
+}
