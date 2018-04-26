@@ -17,6 +17,25 @@ h2 {
 	margin-bottom: 50px;
   font-family: 'Contrail One', cursive;
   letter-spacing: 1px;
+
+}
+
+.spec {
+    position: relative;
+}
+
+.spec::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 220px;
+  height: 2px;
+  background-color: #192331;
+}
+
+.exp {
+  color: #192331;
 }
 
 .container {
@@ -43,10 +62,11 @@ html, body {
 .myface {
   width: 100px;
   height: 100px;
-  background: #fff;
   border: 3px solid #F84F4B;
   border-radius: 50%;
   margin: 0 auto; 
+  background-image: url(../img/ava.png);
+  background-size: cover;
 }
 
 
@@ -192,9 +212,11 @@ h4 {
 }
 
 .copyright {
-  text-align: center;
   opacity: 0.25;
   margin-top: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .contact {
@@ -202,6 +224,10 @@ h4 {
   color: #192331;
 }
 
+.contact .container {
+  font-size: 20px;
+  padding-top: 100px; 
+}
 
 .phone i, .mail i, .skype i {
   color: #F84F4B;
@@ -269,3 +295,120 @@ button:hover {
   
 
 }
+
+@media (max-width: 1100px) {
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  .main-page {
+    padding-top: 150px;
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .work-example {
+    width: 200px;
+    height: 200px;
+  }
+
+  .name-slaid {
+    padding: 5px;
+  }
+  
+
+}
+
+@media (max-width: 950px) {
+  .main-page {
+    padding-top: 100px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .main-page {
+    padding-top: 50px;
+  } 
+
+  .work-example {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name-slaid {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .type-site {
+    font-size: 12px;
+  }
+
+  .opisanie i {
+    font-size: 12px;
+  }
+
+  .phone, .mail, .skype {
+    display: block;
+    padding-bottom: 30px;
+    margin-right: 0;
+  }
+
+
+}
+
+@media (max-width: 550px) {
+  .work-example {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  .name-slaid {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .work-example {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+  }
+
+  .name-slaid {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 11px;
+  }
+
+  .type-site {
+    font-size: 9px;
+  }
+
+  .opisanie i {
+    display: none;
+  }
+}
+
