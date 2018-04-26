@@ -22,6 +22,7 @@ h2 {
 
 .spec {
     position: relative;
+    width: 280px;
 }
 
 .spec::after {
@@ -29,7 +30,8 @@ h2 {
   position: absolute;
   display: block;
   top: 50%;
-  width: 220px;
+  left: -1px;
+  width: 210px;
   height: 2px;
   background-color: #192331;
 }
@@ -72,7 +74,7 @@ html, body {
 
 .section {
 	width: 100%;
-  padding: 10px;
+
   position: relative;
 }
 
@@ -213,10 +215,9 @@ h4 {
 
 .copyright {
   opacity: 0.25;
-  margin-top: 20px;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .contact {
