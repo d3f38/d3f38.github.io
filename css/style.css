@@ -330,14 +330,23 @@ button:hover {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   h2 {
     margin-bottom: 10px;
   }
 
   .main-page {
     padding-top: 50px;
+    padding-bottom: 100px;
   } 
+
+  .work {
+    padding-bottom: 100px;
+  }
+
+  .contact .container {
+    padding-bottom: 100px;
+  }
 
   .work-example {
     width: 150px;
