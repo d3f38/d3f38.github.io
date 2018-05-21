@@ -392,6 +392,11 @@ button:hover {
   .name-slaid {
     font-size: 30px;
   }
+
+  .contact .container {
+    padding-bottom: 150px;
+  }
+
 }
 
 @media (max-width: 320px) {
@@ -400,6 +405,11 @@ button:hover {
     height: 120px;
     margin: 5px;
   }
+
+  .contact .container {
+    padding-bottom: 175px;
+  }
+
 
   .name-slaid {
     font-size: 25px;
