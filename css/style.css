@@ -345,7 +345,7 @@ button:hover {
   }
 
   .contact .container {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
 
   .work-example {
@@ -393,9 +393,6 @@ button:hover {
     font-size: 30px;
   }
 
-  .contact .container {
-    padding-bottom: 150px;
-  }
 
 }
 
@@ -406,9 +403,6 @@ button:hover {
     margin: 5px;
   }
 
-  .contact .container {
-    padding-bottom: 175px;
-  }
 
 
   .name-slaid {
