@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Щеточка</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="img/favicon1.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic" rel="stylesheet">
+	<!-- для корректного отображения страницы в IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<!-- задаем параметры области просмотра на мобильных устройствах -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<meta name="desciption" content="Краткое текстовое описание страницы, которое поисковая система может использовать в результатах поиска">
+	<meta name="keywords" content="список ключевых слов, лучше этот тег вообще не использовать">
+
+</head>
+<body>
+	<header class="header_color-theme header_inner">
+		
+		<div class="container">
+			<!--<div class="header__text">Химчистка ковров и мягкой мебели<br>у Вас на дому в Санкт-Петербурге!</div>-->
+			<div class="header__logo"><img class="header__logo_img" src="img/logo.png">
+			</div>		
+			
+
+<!---->			<div class="header__request">
+				<a href="tel:79522446108" class="header__phone"><i class="fas fa-phone"></i> +7 952 244-61-08</a>
+				<!--<input type="button" name="button__call" class="button__call" value="Заказать звонок">
+				<input type="button" name="button__call_burger" class="button__call_burger">-->
+			</div>
+
+			<div class="header__menu">
+				<ul>
+					<li><a href="#" class="header__menu_item">О компании</a></li>
+					<li><a href="#" class="header__menu_item">Услуги</a></li>
+					<li><a href="#" class="header__menu_item">Цены</a></li>
+					<li><a href="#" class="header__menu_item">Отзывы</a></li>
+					<li><a href="#" class="header__menu_item">FAQ</a></li>
+					<li><a href="#" class="header__menu_item">Контакты</a></li>
+				</ul>
+	        </div>	
+<div class="header__menu-burger">
+				
+			</div>
+
+		</div>
+		<div class="container">
+			
+        </div>
+	</header>
+
+	<main>
+
+		<div class="main-page__img">
+			<img src="img/main-page3.jpg">
+			<div class="main-page__img_dark"></div>
+			<div class="main-page__img_text">
+
+				<h1>Химчистка ковров и мягкой мебели в Санкт-Петербурге!</h1>
+				<div class="main-page_mobile">
+					<h2>Мы делаем окружение Ваших детей безопасным!</h2>
+					<div class="form-call">
+						
+						<form method="post" action="" id="formMain" name="formMain">
+							<div class="form-element">
+								<!-- <label for="name">Ваше имя</label><br> -->
+								<input id="name" type="text" name="name" placeholder="Ваше имя" maxlength="30" autocomplete="off" required/>
+							</div>
+							
+							<div class="form-element">
+								<!-- <label for="telephone">Номер телефона для связи</label><br> -->
+								<input id="telephone" type="Tel" name="telephone" placeholder="Ваш телефон" maxlength="30" autocomplete="off" required/>
+							</div>	
+							
+							<input id="button" type="button"  value="Заказать химчистку" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="main-page_mobile_hidden">
+				<h2>Мы делаем окружение Ваших детей безопасным!</h2>
+				<div class="form-call">
+						
+						<form method="post" action="" id="formMain" name="formMain">
+							<div class="form-element">
+								<!-- <label for="name">Ваше имя</label><br> -->
+								<input id="name" type="text" name="name" placeholder="Ваше имя" maxlength="30" autocomplete="off" required/>
+							</div>
+							
+							<div class="form-element">
+								<!-- <label for="telephone">Номер телефона для связи</label><br> -->
+								<input id="telephone" type="Tel" name="telephone" placeholder="Ваш телефон" maxlength="30" autocomplete="off" required/>
+							</div>	
+							
+							<input id="button" type="button"  value="Заказать химчистку" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
+						</form>
+				</div>
+			</div>
+		</div>	
+
+	</main>
+
+
+</body>
+</html>
