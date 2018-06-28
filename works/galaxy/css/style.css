@@ -97,10 +97,6 @@ body {
 	font-size: 14px;
 	font-weight: bold;
 	padding: 10px;
-}
-
-.menu__item a {
-	
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 	transition: color 0.3s;
@@ -164,7 +160,6 @@ body {
 	transform: translateY(0px);
 }
 
-
 footer {
 	position: absolute;
 	bottom: 30px;
@@ -195,43 +190,21 @@ footer a {
 	text-align: left;
 }
 
-
-.wrapper {
-	padding: 55px;
+.panel {
+ width: 790px;
+ padding-left: 55px;
+ padding-top: 55px;
 }
 
-.accordion li > .sub-menu {
-	height: 0;
-	overflow: hidden;
-	transition: 1s;
-	width: 790px;
-	text-transform: uppercase;
-	padding-left: 25px;
-	font-size: 11px;
-	line-height: 2.5;
+.panel-heading a {
+ color: #fff;
+ display: block;
+ transition: 0.3s;
+ text-decoration: none;
+ font-style: italic;
 }
 
-.accordion li {
-	list-style: none;	
-	margin-bottom: 45px;
-}
-
-.accordion li > a {
-	display: block;
-	position: relative;
-	width: 600px;
-	font-style: italic;
-	font-weight: bold;
-	text-decoration: none;
-	color: #fff;
-}
-
-.accordion > li:target > a {
-	text-transform: uppercase;
-	font-style: normal;
-}
-
-.accordion li > a::before {
+.panel-heading a::before {
 	content: '';
 	width: 15px;
 	height: 15px;
@@ -242,7 +215,15 @@ footer a {
 	background-size: contain;
 }
 
-.accordion > li:target > a::before {
+.panel-heading.in {
+	text-transform: uppercase;
+}
+
+.panel-heading.in a {
+	font-style: normal;
+}
+
+.panel-heading.in a::before {
 	content: '';
 	width: 15px;
 	height: 15px;
@@ -251,7 +232,13 @@ footer a {
 	background-size: contain;
 }
 
-.accordion > li:target > .sub-menu {
-	height: 240px;
+.panel-body {
+	padding-left: 25px;
+	text-transform: uppercase;
+}
+
+.panel-collapse {
+ display: none;
+ padding-bottom:20px;
 }
 
