@@ -207,6 +207,10 @@ main {
 	font-style: italic;
 }
 
+.menu-heading {
+	display: none;
+}
+
 .menu-heading a {
 	padding: 5px;
 	margin-top: 10px;
@@ -259,8 +263,12 @@ main {
 	margin-bottom: 40px; 
 }
 
-.panel-collapse, .menu-collapse  {
+.panel-collapse {
 	display: none;
+}
+
+.menu-collapse {
+	display: inline-block;
 }
 
 
@@ -273,9 +281,14 @@ main {
 
 
 @media (max-width: 840px) {
+	.menu-heading {
+		display: block;
+	}
+
 	body {
 			min-width: 100%;
 			min-height: 100%;
+			height: 100vh
 		}
 	.logo {
 		height: auto;
