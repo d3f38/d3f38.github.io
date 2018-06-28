@@ -1,0 +1,257 @@
+*, *::before, *::after {
+	/* теперь паддинги и бордеры не будут увеличивать ширину и высоту */
+	box-sizing: border-box;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	min-width: 1024px;
+	min-height: 640px;
+	/*overflow: scroll;*/
+	font-family: 'Libre Baskerville', serif;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.body_color_white {
+	color: #fff;
+	height: auto;
+}
+
+
+.body_bg {
+	background: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.body_bg_dark {
+	background-color: rgba(0,0,0,1);
+	height: 100%;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	z-index: -5;
+}
+
+.header_inner {
+	padding: 80px 40px 20px;
+}
+
+.menu {
+	height: 24vh;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.menu_other-page {
+	display: inline-block;
+	padding-left: 80px;
+	height: 100%;
+}
+
+.menu_other-page .menu__item a {
+	color: #949494;
+	font-size: 12px;
+}
+
+.logo {
+	height: 66vh;
+	background-color: #000;
+	position: relative;
+}	
+
+.logo img {
+	position: absolute;
+	display: block;
+	margin-left: -125px;
+	left: 50%;
+	bottom: 40px;
+}
+
+.menu__item {
+	list-style: none;
+	display: inline-block;
+	margin-right: 17px;
+	position: relative;
+	top: -3px;
+}
+
+.menu__item a {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.menu__item a {
+	
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+	position: relative;
+}
+
+.menu__item a::before,
+.menu__item a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.menu_other-page .menu__item a::before,
+.menu_other-page .menu__item a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+}
+
+
+.menu__item a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.menu__item a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.menu_other-page .menu__item a:hover,
+.menu_other-page .menu__item a:focus {
+	color: #fff;
+}
+
+.menu__item a:hover::before,
+.menu__item a:focus::before,
+.menu__item a:hover::after,
+.menu__item a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+
+footer {
+	position: absolute;
+	bottom: 30px;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+footer p {
+	text-align: center;
+	text-transform: uppercase;
+	color: #949494;
+	font-size: 11px;
+	margin: 0;
+}
+
+footer a {
+	color: #949494;
+}
+
+.footer_inner {
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+}
+
+.footer_inner p {
+	text-align: left;
+}
+
+
+.wrapper {
+	padding: 55px;
+}
+
+.accordion li > .sub-menu {
+	height: 0;
+	overflow: hidden;
+	transition: 1s;
+	width: 790px;
+	text-transform: uppercase;
+	padding-left: 25px;
+	font-size: 11px;
+	line-height: 2.5;
+}
+
+.accordion li {
+	list-style: none;	
+	margin-bottom: 45px;
+}
+
+.accordion li > a {
+	display: block;
+	position: relative;
+	width: 600px;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+
+.accordion > li:target > a {
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+.accordion li > a::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../img/open.png);
+	background-size: contain;
+}
+
+.accordion > li:target > a::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	vertical-align: top;
+	background: url(../img/close.png);
+	background-size: contain;
+}
+
+.accordion > li:target > .sub-menu {
+	height: 240px;
+}
+
