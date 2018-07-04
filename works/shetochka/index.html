@@ -9,6 +9,7 @@
 	<link rel="icon" type="image/png" href="img/favicon1.png" />
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 	<!-- для корректного отображения страницы в IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<!-- задаем параметры области просмотра на мобильных устройствах -->
@@ -16,41 +17,35 @@
 
 	<meta name="desciption" content="Краткое текстовое описание страницы, которое поисковая система может использовать в результатах поиска">
 	<meta name="keywords" content="список ключевых слов, лучше этот тег вообще не использовать">
-
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
 <body>
 	<header class="header_color-theme header_inner">
-		
 		<div class="container">
-			<!--<div class="header__text">Химчистка ковров и мягкой мебели<br>у Вас на дому в Санкт-Петербурге!</div>-->
-			<div class="header__logo"><img class="header__logo_img" src="img/logo.png">
+			<div class="header__logo"><a href="#"><img class="header__logo_img" src="img/logo.png"></a>
 			</div>		
-			
-
-<!---->			<div class="header__request">
+			<div class="header__request">
 				<a href="tel:79522446108" class="header__phone"><i class="fas fa-phone"></i> +7 952 244-61-08</a>
-				<!--<input type="button" name="button__call" class="button__call" value="Заказать звонок">
-				<input type="button" name="button__call_burger" class="button__call_burger">-->
 			</div>
 
 			<div class="header__menu">
 				<ul>
-					<li><a href="#" class="header__menu_item">О компании</a></li>
-					<li><a href="#" class="header__menu_item">Услуги</a></li>
-					<li><a href="#" class="header__menu_item">Цены</a></li>
-					<li><a href="#" class="header__menu_item">Отзывы</a></li>
-					<li><a href="#" class="header__menu_item">FAQ</a></li>
-					<li><a href="#" class="header__menu_item">Контакты</a></li>
+					<li><a href="#about" class="header__menu_item">О компании</a></li>
+					<li><a href="#services" class="header__menu_item">Услуги</a></li>
+					<li><a href="#works" class="header__menu_item">Примеры работ</a></li>
+					<li><a href="#price" class="header__menu_item">Цены</a></li>
+					<li><a href="#reviews" class="header__menu_item">Отзывы</a></li>
+					<li><a href="#faq" class="header__menu_item">FAQ</a></li>
+					<li><a href="#contacts" class="header__menu_item">Контакты</a></li>
 				</ul>
 	        </div>	
-<div class="header__menu-burger">
-				
+			<div class="header__menu-burger">
+				<div class="burger__line burger__line_top"></div>
+				<div class="burger__line"></div>
+				<div class="burger__line burger__line_bottom"></div>
 			</div>
 
 		</div>
-		<div class="container">
-			
-        </div>
 	</header>
 
 	<main>
@@ -59,51 +54,371 @@
 			<img src="img/main-page3.jpg">
 			<div class="main-page__img_dark"></div>
 			<div class="main-page__img_text">
-
-				<h1>Химчистка ковров и мягкой мебели в Санкт-Петербурге!</h1>
-				<div class="main-page_mobile">
-					<h2>Мы делаем окружение Ваших детей безопасным!</h2>
-					<div class="form-call">
+				<h1>Химчистка ковров и мягкой мебели<br>в Санкт-Петербурге!</h1>		<span class="slogan">Мы делаем окружение Ваших детей безопасным!</span>
+				<div class="form-call">				
+					<form method="post" action="" id="formMain" name="formMain">
+						<div class="form-element">
+							<!-- <label for="name">Ваше имя</label><br> -->
+							<input id="name" type="text" name="name" placeholder="Ваше имя" maxlength="30" autocomplete="off" required/>
+						</div>
+						<div class="form-element">
+							<!-- <label for="telephone">Номер телефона для связи</label><br> -->
+							<input id="telephone" type="Tel" name="telephone" placeholder="Ваш телефон" maxlength="30" autocomplete="off" required/>
+						</div>	
 						
-						<form method="post" action="" id="formMain" name="formMain">
-							<div class="form-element">
-								<!-- <label for="name">Ваше имя</label><br> -->
-								<input id="name" type="text" name="name" placeholder="Ваше имя" maxlength="30" autocomplete="off" required/>
-							</div>
-							
-							<div class="form-element">
-								<!-- <label for="telephone">Номер телефона для связи</label><br> -->
-								<input id="telephone" type="Tel" name="telephone" placeholder="Ваш телефон" maxlength="30" autocomplete="off" required/>
-							</div>	
-							
-							<input id="button" type="button"  value="Заказать химчистку" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
-						</form>
-					</div>
+						<input id="button" type="button"  value="Заказать химчистку" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
+					</form>
 				</div>
 			</div>
-			<div class="main-page_mobile_hidden">
-				<h2>Мы делаем окружение Ваших детей безопасным!</h2>
-				<div class="form-call">
-						
-						<form method="post" action="" id="formMain" name="formMain">
-							<div class="form-element">
-								<!-- <label for="name">Ваше имя</label><br> -->
-								<input id="name" type="text" name="name" placeholder="Ваше имя" maxlength="30" autocomplete="off" required/>
-							</div>
-							
-							<div class="form-element">
-								<!-- <label for="telephone">Номер телефона для связи</label><br> -->
-								<input id="telephone" type="Tel" name="telephone" placeholder="Ваш телефон" maxlength="30" autocomplete="off" required/>
-							</div>	
-							
-							<input id="button" type="button"  value="Заказать химчистку" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
-						</form>
-				</div>
+		</div>
+
+	</main>
+	<section id="about">
+		<div class="container">
+			<h2>О компании</h2>
+			<div class="opisanie">
+				<p>Химчистка на дому – это удобно и оперативно, качественно и надежно. Мы не только предлагаем отличные условия и выгодные цены, но и осуществляем комплексную уборку жилых и офисных помещений. Так что химчистка на дому может стать дополнением к необходимым Вам клининговым услугам.</p>
+				<p>Нет необходимости везти громоздкие пыльные ковры куда-либо – просто вызовите к себе специалиста, который быстро вернёт мебели и ковровым изделиям свежий сияющий вид.
+				Все работы выполняются тщательно и аккуратно, у Вас на глазах.
+				Специальные составы не только освежают ворс и обивку, но и удаляют из неё пыль, бактерии, пылевых клещей и других непрошенных постояльцев.</p>
+				
+				<p>«Щёточка» уже помогла многим семьям сделать среду обитания их детей безопасной!</p>
+			</div>
+			<div class="master">
+				
+				<h2>Мастер на все руки нашей компании - Максим</h2><img src="img/master.png">
 			</div>
 		</div>	
 
-	</main>
+	</section>
+	<section class="services" id="services">
+		<div class="container">
+			<h2>Услуги</h2>		
+			<p>«Щёточка» предоставляет услуги по чистке <strong>только текстильных поверхностей:</strong></p>
+				<ul>
+					<li>ковролин , ковровые покрытия (короткий и длинный ворс), шерстяные и шёлковые ковры</li>
+					<li>диваны, кресла, стулья ,пуфик , матрасы</li>
+					<li>детские коляски и детские автокресла </li>
+				</ul>
+				<p>Желаете взглянуть на процесс химчистки? <i class="far fa-hand-point-right"></i></p>	
+			<div class="video-clean">
+				<iframe src="https://vk.com/video_ext.php?oid=-156714664&id=456239017&hash=da21c625b1cbf50d" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="services-opisanie">
+				<img src="img/services-pic.jpg">
+			</div>
+			
+		</div>
+	</section>
+	<section class="works" id="works">
+		<div class="container">
+			<h2>Примеры наших работ</h2>
+			<div class="example">
+				<h3>Чистка дивана</h3>
+				<div class="example-do">
+					<img src="img/example1-do.jpg">
+					<p>Диван после сдачи квартиры в аренду, множество пятен от еды, напитков, чернила.</p>
+				</div>
+				<div class="example-posle">
+					<img src="img/example1-posle.jpg">
+					<p>После химчистки специалистом «Щёточка», диван буквально вернули к жизни, вернув ему насыщенный цвет.</p>
+				</div>
+			</div>
+			<div class="example">
+				<h3>Чистка ковролина</h3>
+				<div class="example-do">
+					<img src="img/example2-do.jpg">
+					<p>Ковролин в течение полугода активно заливали вином.</p>
+				</div>
+				<div class="example-posle">
+					<img src="img/example2-posle.jpg">
+					<p>После двухчасовой кропотливой работы специалистом Щёточки пятна канули в небытие.</p>
+				</div>
+				<h3>Другие работы</h3>
+				<div class="example-other">
+					<div class="example_small">
+						<img src="img/example_small1.jpg">
+						<p>Два длинноворсных коврика с прихожей, вернули первозданный вид, выкачав всю грязь.</p>
+					</div>
+					<div class="example_small">
+						<img src="img/example_small2.jpg">
+						<p>Чистка шерстяного ковра, выровнялся цвет, слегка распушился.</p>
+					</div>
+					<div class="example_small">
+						<img src="img/example_small3.jpg">
+						<p>Чистка кухонного уголка, пищевые пятна были повержены.</p>
+					</div>
+					<div class="example_small">
+						<img src="img/example_small4.jpg">
+						<p>На стулья пролили сладкий чай, ликвидация пятен прошла успешно.</p>
+					</div>
+				</div>
+			</div>
+			<a href="https://vk.com/scheto4ka?z=album-156714664_248332178" target="_blank" class="more-works">Посмотреть еще больше работ! <i class="fas fa-camera"></i></a>
+		</div>
+	</section>
+	<section class="price" id="price">
+		<div class="container">
+			<h2>Цены на услуги химчистки</h2>
+			<table>
+				<tr>
+					<td>Ковролин/ковровое покрытие (кв.м)</td>
+					<td class="value">120/150 рублей</td>
+				</tr>
+				<tr>
+					<td>Ворс 1.5 см/от 1.5 см (кв.м)</td>
+					<td class="value">250/300 рублей</td>
+				</tr>
+				<tr>
+					<td>Синтетика+шерсть (кв.м)</td>
+					<td class="value">250 рублей</td>
+				</tr>
+				<tr>
+					<td>Шерсть (кв.м) </td>
+					<td class="value">250 рублей</td>
+				</tr>
+				<tr>
+					<td>Шелк (кв.м) </td>
+					<td class="value">350 рублей</td>
+				</tr>
+				<tr>
+					<td>Кресло (мал/большое)</td>
+					<td class="value">500/700 рублей</td>
+				</tr>
+				<tr>
+					<td>Диван-книжка/выкатной (кресло) односпальный</td>
+					<td class="value">1000 рублей</td>
+				</tr>
+				<tr>
+					<td>Диван-книжка/выкатной двуспальный (комфортно сидят 2 чел)</td>
+					<td class="value">1300 рублей</td>
+				</tr>
+				<tr>
+					<td>Диван-книжка/выкатной двуспальный (комфортно сидят 3 чел)</td>
+					<td class="value">1500 рублей</td>
+				</tr>
+				<tr>
+					<td>Диван угловой (комфортно сидят 3 человека)</td>
+					<td class="value">1800 рублей</td>
+				</tr>
+				<tr>
+					<td>------//------ 3+, за каждое посадочной место 	 </td>
+					<td class="value">+500 рублей</td>
+				</tr>
+				<tr>
+					<td>Маленькие подушки к дивану</td>
+					<td class="value">Бесплатно</td>
+				</tr>
+				<tr>
+					<td>Средняя/большая диванная подушка</td>
+					<td class="value">100/200 рублей</td>
+				</tr>
+				<tr>
+					<td>Матрас односпальный (с одной стороны/с двух)</td>
+					<td class="value">800/1200 рублей</td>
+				</tr>
+				<tr>
+					<td>Матрас двуспальный (с одной стороны/с двух)	</td>
+					<td class="value">1000/1600 рублей</td>
+				</tr>
+				<tr>
+					<td>Пуфик (при комплексном заказе (1) – бесплатно)</td>
+					<td class="value">300 рублей</td>
+				</tr>
+				<tr>
+					<td>Стул/стул + мягкая спинка</td>
+					<td class="value">100/150 рублей</td>
+				</tr>
+
+				<tr>
+					<th colspan="2">Автокресла и коляски. Только текстильная поверхность</th>
+				</tr>    
+				<tr>
+					<td>Автокресло детское от 0 до 12 месяцев</td>
+					<td class="value">700 рублей</td>
+				</tr>
+				<tr>
+					<td>Автокресло детское от 1 года до 6 лет</td>
+					<td class="value">1000 рублей</td>
+				</tr>
+				<tr>
+					<td>Коляска-трость</td>
+					<td class="value">1000 рублей</td>
+				</tr>
+				<tr>
+					<td>Прогулочная коляска</td>
+					<td class="value">1100/2000 рублей</td>
+				</tr>
+				<tr>
+					<td>Коляска-люлька</td>
+					<td class="value">1500 рублей</td>
+				</tr>  
+				<tr>
+					<td>Чистка автосалона (посадочные места + пол)</td>
+					<td class="value">от 2000 рублей</td>
+				</tr>   
+	        </table> 
+			<p>Минимальная сумма заказа в городе Санкт-Петербург -1500 рублей.<br>
+			Выезд мастера – бесплатно (в пределах города) , пригород – 300 рублей за выезд!</p>
+			<ul>На комплексные заказы предусмотрена система скидок:
+				<li>от 3500 рублей – 10% скидка</li>
+				<li>от 10000 рублей – 15% скидка</li>
+				<li>от 20000 – 20% скидка</li>
+			</ul>
+            <p>Выдвижная секция дивана - входит в стоимость чистки!<br>
+				Выведение пятен - входит в стоимость чистки! 
+				(наценка за большое количества пятен – обговаривается отдельно)<br>
+				Если диван имеет сложную нестандарнтую форму (дизайнерский вариант) ,стоимость обговаривается отдельно.<br>
+				Чистка текстильной обивки производится на всей поверхности, предоставленной клиентом.<br>Перемещение и разбор мебели производится в согласовании с клиентом.</p>     
+		</div>
+	</section>
+	<section class="reviews" id="reviews">
+		<div class="container">
+			<h2>Отзывы наших клиентов</h2>
+		</div>
+	</section>
+	<section class="faq" id="faq">
+		<div class="container">
+			<h2>F.A.Q</h2>
+
+			<div class="panel">
+				<div class="panel-heading">
+					<i class="fas fa-question"></i> У нас есть ребенок , безопасны ли чистящие средства?
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<p><i class="fas fa-quote-left"></i>Все средства сертифицированы и только от проверенных производителей (Karcher), полностью безопасны и не вызывают аллергических реакций. Плюс ко всему, мы всегда дополнительно промываем мебель, чтобы устранить остатки загрязнений и средства, которые остались в обивке.<i class="fas fa-quote-right"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<i class="fas fa-question"></i> Через какое время можно начать пользоваться мебелью?
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<p><i class="fas fa-quote-left"></i>В среднем, мебель сохнет от 6 до 12 часов в зависимости от типа ткани, проветриваемости и температуры в помещении. Если есть возможность, рекомендуем не пользоваться вещью в течении 24 часов после чистки.<i class="fas fa-quote-right"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<i class="fas fa-question"></i> Вы гарантируете, что все пятна будут устранены?
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<p><i class="fas fa-quote-left"></i>Мы гарантируем, что ваша мебель будет чистая, а ткань сохранит свои свойства. В большинстве случаев мы удаляем до 95% загрязнений, зависит от типа ткани, происхождения пятен и от того пытались ли вы чистить мебель "своими силами".<i class="fas fa-quote-right"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<i class="fas fa-fire"></i> Сколько времени занимает химчистка?
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<p><i class="fas fa-quote-left"></i>Чистка двух-трехместного дивана длится в среднем 1,5 часа. Исключения составляют сильные загрязения, либо действительно большие диваны (более 4х мест), в особенности диваны, состоящие из отдельных подушек.<i class="fas fa-quote-right"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<i class="fas fa-fire"></i> На диван сделали "пи-пи" уйдет ли запах?
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<p><i class="fas fa-quote-left"></i>В 90% случаев запах уходит полностью, исключения составляют случаи когда "пи-пи" на мебель/матрасы делали с регулярностью раз в неделю, либо очень давно, и плюс ко всему вы ванишем самостоятельно затирали пятна, тогда, скорее всего, запах и пятна вывести полностью не удастся.<i class="fas fa-quote-right"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<i class="far fa-question-circle"></i> Я – собственник кафе/офиса, можете ли Вы почистить мебель в нерабочее время, т.е. ночью?
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<p><i class="fas fa-quote-left"></i>Не вопрос, чистку осуществляем также и в ночное время.<i class="fas fa-quote-right"></i></p>
+					</div>
+				</div>
+			</div>			
+			<div class="panel">
+				<div class="panel-heading">
+					<i class="far fa-question-circle"></i> Когда лучше записываться на чистку?
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<p><i class="fas fa-quote-left"></i>Если собираетесь чистить спальное место, к работе, желательно, приступить в 10 утра, чтобы до ночи Ваша мебель 100% высохла. Запись, желательно, производить за день до чистки. Также, по возможности, готовы оперативно выезжать на чистку!<i class="fas fa-quote-right"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<h2>Контакты</h2>
+			<div class="info">
+				<div class="info__data"><i class="fas fa-map-marker-alt"></i> г. Санкт-Петербург , метро Ленинский Проспект</div>
+				<div class="info__data"><i class="fas fa-phone-square"></i> <a href="tel:79522446108">+7 952 244-61-08</a></div>
+				<div class="info__data"><i class="far fa-envelope-open"></i> thecrewspb@gmail.com </div>
+				<div class="info__data"><i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=79522446108">+7 952 244-61-08</a></div>
+				<div class="info__data"><i class="fab fa-telegram-plane"></i> <a href="tg://resolve?domain=<79522446108>">Telegram</a></div>
+			</div>
+			<div class="contacts-form">
+				<h2>Для вызова специалиста позвоните нам, или оставьте заявку, заполнив форму:</h2>
+				<div class="form-call">				
+					<form method="post" action="" id="formMain" name="formMain">
+						<div class="form-element">
+							<!-- <label for="name">Ваше имя</label><br> -->
+							<input id="name" type="text" name="name" placeholder="Ваше имя" maxlength="30" autocomplete="off" required/>
+						</div>
+						<div class="form-element">
+							<!-- <label for="telephone">Номер телефона для связи</label><br> -->
+							<input id="telephone" type="Tel" name="telephone" placeholder="Ваш телефон" maxlength="30" autocomplete="off" required/>
+						</div>	
+						
+						<input id="button" type="button"  value="Заказать химчистку" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-info">
+				<img class="header__logo_img" src="img/logo.png">
+				<h3>Успешно окружаем Ваших деток чистотой!</h3>
+				<p class="copyright">&copy; «Шёточка» Химчистка мягкой мебели и ковровых покрытий в Санкт-Петербурге.</p>
+				<br>
+				<p>Информация о ценах не является офертой, публичной офертой и предоставляется исключительно в информационно-ознакомительных целях. Фотографии примеров работ и рабочего процесса принадлежат владельцу сайта, использование на других интернет-ресурсах без согласования с владельцем сайта запрещено.</p>
+			</div>
+			<script type="text/javascript" src="https://vk.com/js/api/openapi.js?156"></script>
+			<!-- VK Widget -->
+			<div id="vk_groups"></div>
+			<script type="text/javascript">
+			VK.Widgets.Group("vk_groups", {mode: 3, color3: 'F58220', width: '300'}, 156714664);
+			</script>
+		</div>
+	</footer>
 
 
+
+
+
+	<script type="text/javascript">	
+
+		$(document).ready(function () {
+
+			$('.panel-heading').click(function () {
+				$(this).toggleClass('in').next().slideToggle();
+				$('.panel-heading').not(this).removeClass('in').next().slideUp();
+	        });
+
+	   //      $('.menu-heading').click(function () {
+				// $(this).toggleClass('in').next().slideToggle();
+				// $('.menu-heading').not(this).removeClass('in').next().slideUp();
+    //     	});
+
+	    });
+	</script>
 </body>
 </html>
