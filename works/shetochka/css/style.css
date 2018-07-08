@@ -245,6 +245,11 @@ header {
 	font-size: 20px;
 }
 
+.main-page__img_text .soglasie{
+	color: #fff;
+	font-size: 13px;
+}
+
 h1 {
 	background-color: ;
 	font-size: 40px;
@@ -289,6 +294,8 @@ h2::after {
 	background-color: #f58220;
 
 }
+
+
 
 .form-call {
 /*	box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
@@ -350,6 +357,14 @@ h2::after {
 	border: 2px solid #f58220;
 } 
 
+.soglasie {
+	font-size: 12px;
+}
+
+.soglasie a {
+	text-decoration: none;
+	color: #f58220;
+}
 
 .service .container{
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -512,11 +527,11 @@ h2::after {
 }
 
 table {
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255,255,255,0);
 	text-shadow: 0 0 3px 000;	
 	border: 5px dashed #f58220;
 	padding: 10px;
-	color: #333b45;
+/*	color: #333b45;*/
 	line-height: 1;
 	border-collapse: collapse;
 }
@@ -659,6 +674,7 @@ td:hover, td:hover ~ td{
 	text-decoration: none;
 	color: #333b45;
 }
+
 
 .contacts-form {
 	display: inline-block;
