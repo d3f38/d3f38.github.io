@@ -851,6 +851,7 @@ footer {
 
 	.footer-info {
 		width: 100%;
+		padding-right: 0;
 	}
 
 }
@@ -890,6 +891,39 @@ footer {
 	}
 }
 
+@media (max-width: 650px) {
+	.button__call {
+		display: none;
+	}
+
+	.button__call_burger {
+		display: inline-block;
+	}
+
+	.main-page__img_text {
+		top: 20px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+
+	.form-call {
+		font-size: 15px;
+	}
+
+	.header__phone {
+		font-size: 20px;
+		margin-left: 10px;
+	}
+
+	.header__phone i {
+		position: relative;
+		top: 4;
+	}
+
+}
+
 @media (max-width: 550px) {
 	.example_small {
 		width: 100%;
@@ -923,35 +957,14 @@ footer {
 	.slogan {
 		font-size: 20px;
 	}
+
+	.master h2 {
+		font-size: 20px;
+		margin: 0;
+	}
 }	
 
-@media (max-width: 650px) {
-	.button__call {
-		display: none;
-	}
 
-	.button__call_burger {
-		display: inline-block;
-	}
-
-	.main-page__img_text {
-		top: 20px;
-	}
-
-	h1 {
-		font-size: 25px;
-	}
-
-	.form-call {
-		font-size: 15px;
-	}
-
-	.header__phone {
-		font-size: 20px;
-		margin-left: 10px;
-	}
-
-}
 
 @media (max-width: 470px) {
 	.more-works {
@@ -994,7 +1007,7 @@ footer {
 		font-size: 10px;
 		color: #fff;
 		position: relative;
-		top: -2px;
+
 		margin-right: 10px;
 	}
 
@@ -1022,6 +1035,7 @@ footer {
 @media (max-width: 370px) {
 	h1 {
 		font-size: 17px;
+		padding-top: 20px;
 	}
 
 	.slogan {
