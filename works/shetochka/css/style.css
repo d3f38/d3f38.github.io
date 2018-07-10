@@ -297,7 +297,7 @@ h2::after {
 
 
 
-.form-call {
+.form-call, .form-call_mobile {
 /*	box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
 	background-color: ;
 	padding: 10px;
@@ -307,6 +307,12 @@ h2::after {
 	width: auto;
 	margin: 50px auto 0; 
 	border-radius: 20px; 
+}
+
+
+.form-call_mobile {
+	display: none;
+	margin: 10px auto 0;
 }
 
 #button {
@@ -533,17 +539,18 @@ table {
 	padding: 10px;
 /*	color: #333b45;*/
 	line-height: 1;
-	border-collapse: collapse;
+	border-collapse: collaps;
 }
 
 td {
-	padding: 5px 20px;
+	padding: 5px 10px;
+	border-bottom: 1px dashed #fff;
 }
 
 th {
 	color: #f58220;
 }
-
+/*
 tr:first-child td {
 	padding-top: 20px;
 }
@@ -551,14 +558,34 @@ tr:first-child td {
 tr:last-child td{
 	padding-bottom: 20px;
 }
-
+*/
 .value  {
 	font-weight: bold;
+	vertical-align: top;
 }
 
 
 td:hover, td:hover ~ td{
 	color: #f58220;
+}
+
+.reviews .more-works{
+	width: 430px;
+}
+
+.work-box {
+	width: 300px;
+	margin: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.work-box img {
+	width: 100%;
+}
+
+.work-box:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 
@@ -805,6 +832,27 @@ footer {
 		width: 50%;
 	}
 
+	.video-clean {
+		width: 100%;
+	}
+
+	.video-clean iframe {
+		height: 300px;
+	}
+
+	.services-opisanie {
+		width: 100%;
+	}
+
+	.services-opisanie img {
+		width: 100%;
+		height: auto;
+	}
+
+	.footer-info {
+		width: 100%;
+	}
+
 }
 
 @media (max-width: 750px) {
@@ -818,6 +866,27 @@ footer {
 
 	.contacts-form {
 		width: 100%;
+	}
+
+	h1 {
+		margin-top: 100px;
+		font-size: 35px;
+	}
+
+	.slogan {
+		font-size: 25px;
+	}
+
+	.main-page__img_text .soglasie {
+		color: #333b45;
+	}
+
+	.form-call {
+		display: none;
+	}
+
+	.form-call_mobile {
+		display: block;
 	}
 }
 
@@ -845,6 +914,15 @@ footer {
 	.price {
 		font-size: 12px;
 	}
+
+	h1 {
+		font-size: 30px;
+		margin-top: 50px;
+	}
+
+	.slogan {
+		font-size: 20px;
+	}
 }	
 
 @media (max-width: 650px) {
@@ -864,11 +942,8 @@ footer {
 		font-size: 25px;
 	}
 
-
-
 	.form-call {
 		font-size: 15px;
-		position: static;
 	}
 
 	.header__phone {
@@ -878,8 +953,37 @@ footer {
 
 }
 
-@media (max-width: 410px) {
+@media (max-width: 470px) {
+	.more-works {
+		width: 100%;
+	}
 
+	.reviews .more-works {
+		width: 100%;
+	}
+
+	.info__data {
+		padding: 5px 0;
+	}
+}
+
+@media (max-width: 420px) {
+
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+
+	.contacts-form h2 {
+		font-size: 20px;
+	}
+
+	.slogan {
+		font-size: 15px;
+	}
 
 	.header__phone {
 		font-size: 15px;
@@ -913,7 +1017,20 @@ footer {
 
 }
 
-@media (max-width: 370px) {
 
+
+@media (max-width: 370px) {
+	h1 {
+		font-size: 17px;
+	}
+
+	.slogan {
+		font-size: 12px;
+	}
+
+	#name, #telephone, #button {
+		width: 100%;
+		font-size: 15px;
+	}
 }
 
