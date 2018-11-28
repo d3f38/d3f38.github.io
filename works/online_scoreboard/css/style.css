@@ -1,0 +1,151 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #272624;
+}
+
+.wrapper {  
+    height: 100vh; 
+    text-align: center;
+}
+
+.flightTable {
+    padding: 0 50px 20px;
+    height: 100vh; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+}
+
+.main-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FDE261;
+    font-size: 60px;
+}
+
+.main-link i {
+    color: #272624;
+    background-color: #FDE261;
+    padding: 5px;
+    padding-right: 3px;
+    border-radius: 5px;
+    font-size: 35px;
+    position: relative;
+    top: -8px;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.type-tablo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-tablo__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 5px 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.flightTable .type-tablo__link {
+    font-size: 20px;
+}
+
+.type-tablo__link_display {
+    display: flex;
+    align-items: center;
+}
+
+.type-tablo__link_display:last-child {
+    flex: 2;
+}
+
+.badge {
+    font-size: 30px;
+    position: relative;
+    top: -2px;
+}
+
+.badge_small {
+    font-size: 15px;
+    position: relative;
+    top: 0px;
+    margin: 0 10px;
+}
+
+table {
+    width: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    border-spacing: 5px;
+    color: #FDE261;
+}
+
+td, tr {
+    padding: 10px;
+    background: #575759;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; 
+    background-color: #272624;
+}
+
+.choice {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#search-form {
+    display: inline-block;
+}
+
+.search-form__field {
+    border: 0;
+    padding: 5px;
+    width: 200px;
+    background-color: #272624;
+    color: #575759;
+    border: 2px solid #fff;
+}
+
+.search-form__field:focus {
+    border: 2px solid #FDE261;
+    outline: none;
+    color: #FDE261;
+}
+
+.search-form__btn {
+    border: 0;
+    padding: 5px;
+    outline: none;
+    border: 2px solid #fff;
+    background-color: #272624;
+    color: #fff;
+}
+
+.search-form__btn:hover {
+    border: 2px solid #FDE261;
+}
