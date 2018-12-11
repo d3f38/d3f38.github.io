@@ -1,0 +1,187 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 50px;
+}
+
+/* 
+.form-feedback - основная форма обратной связи;
+.form-thanks - всплывающее окно "Спасибо за обращение!"
+*/
+
+.form-feedback, .form-thanks {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 99;
+	display: none;
+	background-color: rgba(70, 80, 124, 0.8);
+}
+
+.form-thanks {
+	text-align: center;
+}
+
+.form-thanks h2 {
+	margin-bottom: 20px;
+}
+
+.form-thanks .container-form {
+	padding: 65px 90px 20px;
+}
+
+.container-form {
+	max-width: 555px;
+	margin: 50px auto;
+	padding: 65px 90px 70px;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	background-color: #fff;
+	
+}
+
+#contactForm p {
+	color: #212121;
+	text-decoration: underline;
+	margin-bottom: 20px;
+	font-size: 12px;
+	font-weight: 300;
+}
+  
+
+h2 {
+	text-align: center;
+	color: #141f46;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.smile-pic {
+	text-align: center;
+}
+
+.field-block {
+	margin-bottom: 30px;
+}
+
+.field-block_last {
+	margin-bottom: 10px;
+}
+
+.field-block {
+	position: relative;
+}
+
+
+
+.field-block label, .field-block .field {
+	display: block;
+	width: 100%;
+}
+
+.field-block label {
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.field-block .field {
+	font-size: 13px;
+	padding: 8px 20px;
+	line-height: 1.5;
+	border-radius: 2px;
+	border: 1px solid rgb(70, 80, 124, 0.3);;
+	color: #111111;
+	font-family: 'Roboto', sans-serif;
+}
+
+.field-block .field:focus {
+  border-color: #a3a7bd;
+  outline: 0;
+
+}
+
+.field-block textarea {
+	resize: vertical;
+}
+
+/* input[type=file] {
+	color: #46507c;
+	border: 1px solid #46507c;
+	border-radius: 2px;
+} */
+
+.check-text {
+	font-size: 12px;
+	vertical-align: top;
+	font-weight: 300;
+	position: relative;
+	top: -18px;
+	left: 22px;; 
+}
+
+.check-text span{
+	text-decoration: underline;
+	vertical-align: top;
+}
+
+.button, .feedback, .thanks {
+	cursor: pointer;
+	font-size: 13px;
+	padding: 15px 30px;
+	border-radius: 2px;
+	border: 0;
+	outline: none;
+	background-color: #46507c;
+	color:#fff;
+	width: 175px;
+}
+
+.button:hover {
+	background-color: #9096b0;
+}
+
+#buttonClose {
+	margin-right: 15px;
+}
+
+
+
+
+.field-block i {
+	color: #007c0f;
+	font-size: 13px;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}  
+
+#check-1, #check-2, #check-3, #check-4, #check-5 {
+	display: none;
+}
+
+#valid {
+	color: #9f0000;
+	font-size: 10px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.close-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.close-button:hover {
+	opacity: 1;
+}
+
+  

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Форма обратной связи</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+
+</head>
+<body>
+	<div class="feedback">Обратная связь</div>
+	<br>
+	<div class="thanks">Спасибо</div>
+	<div class="form-feedback">
+		<div class="container-form">
+			<span class="close-button"><img src="img/cancel.png" alt=""></span>	
+			<h2>Если у вас есть  замечания или предложения по работе Портала просьба заполнить поля формы обратной связи.</h2>
+			<form id="contactForm" action="" method="post">
+				<div class="field-block">
+					<input id="name" class="field" name="name" required type="text" placeholder="ФИО*">
+					<i class="fas fa-check" id="check-1"></i>
+				</div>
+				<div class="field-block">
+					<input id="position" class="field" name="position" required type="text" placeholder="Должность*">
+					<i class="fas fa-check" id="check-2"></i>
+					</div>
+				<div class="field-block">
+					<input id="email" class="field" name="email" required type="email" placeholder="E-mail*">
+					<span id="valid"></span>
+					<i class="fas fa-check" id="check-3"></i>
+				</div>
+				<div class="field-block">
+					<input id="phone" class="field" name="phone" required type="text" placeholder="Телефон*">
+					<i class="fas fa-check" id="check-4"></i>
+				</div>
+				<div class="field-block">
+					<textarea id="message" class="field" required name="message" rows="1" placeholder="Текст сообщения*" id="check-5"></textarea>
+					<i class="fas fa-check" id="check-5"></i>
+				</div>
+				<div class="field-block">
+					<label for="file">Прикрепить файл(ы):</label>	
+					<input id="file" type="file" multiple="multiple" name="files[]"/>
+					<!-- <div class="listFiles"></div> -->
+				</div>
+
+				<p>Поля, отмеченные *, обязательны для заполнения</p>
+				<div class="field-block field-block_last">
+					<input id="check" name="check" checked type="checkbox">
+					<div class="check-text"><span>Информация о персональных данных</span> авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства о персональных данных.</div>
+				</div>
+				<button id="buttonClose" class="button" type="cancel">Отмена</button>
+				<button id="buttonSubmit" class="button" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<div class="form-thanks">
+		<div class="container-form">
+			<span class="close-button"><img src="img/cancel.png" alt=""></span>	
+			<h2>Спасибо за обращение!</h2>
+			<img src="img/smile.png" alt="smile" class="smile-pic">
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
