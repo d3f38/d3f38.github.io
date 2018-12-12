@@ -48,10 +48,23 @@
 					<span class="valid valid-message"></span>
 					<i class="fas fa-check" id="check-5"></i>
 				</div>
-				<div class="field-block">
-					<!-- <label for="file" class="label-file">Прикрепить файл(ы):</label>	 -->
+				<!-- <div class="field-block">
+					<label for="file" id="label-file">Прикрепить файл(ы):</label>	
 					<input id="file" type="file" multiple="multiple" name="files[]"/>
-					<!-- <div class="listFiles"></div> -->
+				</div> -->
+
+				<div class="attach">
+					<div class="attach__head">Прикрепите файл(ы):</div> 
+					<div class="attach__item">
+						<label id="label-file">
+						<div class="attach__up_start">Прикрепите файл(ы):</div>
+						<input class="attach__input" type="file" name="files" />
+						</label>
+						<div>
+							<span class="attach__name"></span><img src="img/cancel.png" class="attach__delete">
+						</div>
+						
+					</div>
 				</div>
 
 				<p>Поля, отмеченные *, обязательны для заполнения</p>

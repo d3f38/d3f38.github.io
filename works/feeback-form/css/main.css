@@ -105,11 +105,42 @@ h2 {
 	resize: vertical;
 }
 
-/* input[type=file] {
+/* #label-file {
 	color: #46507c;
 	border: 1px solid #46507c;
 	border-radius: 2px;
-} */
+	background-color: #fff;
+	cursor: pointer;
+	font-size: 13px;
+	padding: 15px 25px;
+	outline: none;
+	width: 175px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}  */
+
+#label-file {
+	/* color: #46507c;
+	border: 1px solid #46507c;
+	border-radius: 2px;
+	background-color: #fff;
+	cursor: pointer;
+	font-size: 13px;
+	padding: 15px 25px;
+	outline: none;
+	width: 175px; */
+	position: relative
+} 
+
+#file {
+	font-size: 13px;
+	color: #46507c;
+}
+
+input[type=range] {
+	color: #46507c;
+}
 
 .check-text {
 	font-size: 12px;
@@ -145,9 +176,6 @@ h2 {
 	margin-right: 15px;
 }
 
-
-
-
 .field-block i {
 	color: #007c0f;
 	font-size: 13px;
@@ -166,10 +194,6 @@ h2 {
 	font-weight: normal;
 	transition: .3s;
 }  
-
-.label-file {
-	
-}
 
 .field:focus~.form-label,
 .field:not(:focus):valid~.form-label {
@@ -203,4 +227,80 @@ h2 {
 	opacity: 1;
 }
 
+.attach {
+	margin-bottom: 20px;
+}
+
+.attach__head {
+	color: #46507c;
+	border-radius: 2px;
+	background-color: #fff;
+	cursor: pointer;
+	font-size: 13px;
+	margin-bottom: 10px;
+	display: none;
+}
+
+.attach__name {
+	color: #111111;
+	font-size: 13px;
+}
+
+.attach__item {
+	padding: 0 0 5px 0px;
+	margin: 0 0 5px 0;
+}
+
+.attach__item:last-of-type {
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+
+.attach__up_start {
+	color: #46507c;
+	border: 1px solid #46507c;
+	border-radius: 2px;
+	background-color: #fff;
+	cursor: pointer;
+	font-size: 13px;
+	padding: 12px 20px;
+	width: 175px;
+	margin-bottom: 10px;
+}
+  
+.attach__up {
+	cursor: pointer;
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+}
+  
+.attach__edit,
+.attach__delete {
+	display: none;
+	margin-right: 10px;
+	cursor: pointer;
+	position: relative;
+	top: 1px;
+	width: 10px;
+	height: 10px;
+	margin-left: 10px;
+}
+  
+.attach__edit {
+	color: #2f7dfe;
+}
+  
+.attach__item--attached .attach__up {
+	display: none;
+}
+  
+.attach__item--attached .attach__edit,
+.attach__item--attached .attach__delete {
+	display: inline-block;
+}
+  
+.attach__input {
+	display: none;
+}
   

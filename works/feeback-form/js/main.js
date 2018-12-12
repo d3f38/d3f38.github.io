@@ -60,12 +60,6 @@ jQuery(document).ready(function($) {
         } else {
             $(this).css({'border' : '1px solid #9f0000'});
             $('.valid-email').text('Неправильно заполенное поле');
-            
-            // $('.field:not(:focus):valid~.form-label').css('position','absolute');
-            // $('.field:not(:focus):valid~.form-label').css('top','-15px');
-            // $('.field:not(:focus):valid~.form-label').css('left','0');
-            // $('.field:not(:focus):valid~.form-label').css('font-size','10px');
-
         }
     });
     //Проверка имени
@@ -109,12 +103,64 @@ jQuery(document).ready(function($) {
     
 });
 
-
-// document.querySelector('#file').onchange = function(e) {
-//     files = this.files;
-//     // for(var i = 0; i < files.length; i++) {
-//     //     document.querySelector('#file').innerHTML = files[i].name;
-//     // }
-//     document.querySelector('.listFiles').innerHTML = files[1].name;
-// }
-    
+$('.attach').each(function() { // на случай, если таких групп файлов будет больше одной
+    var attach = $(this),
+      fieldClass = 'attach__item', // класс поля
+      attachedClass = 'attach__item--attached', // класс поля с файлом
+      fields = attach.find('.' + fieldClass).length, // начальное кол-во полей
+      fieldsAttached = 0; // начальное кол-во полей с файлами
+  
+    var newItem = '<div class="attach__item"><label><img src="img/plus.png" class="attach__up"><input class="attach__input" type="file" name="files[]" /></label><div><span class="attach__name"></span><img src="img/cancel.png" class="attach__delete"></div></div>'; // разметка нового поля
+  
+    // При изменении инпута
+    attach.on('change', '.attach__input', function(e) {
+      var item = $(this).closest('.' + fieldClass),
+        fileName = '';
+        $('.attach__head').css('display','block');
+        $('.attach__head').text('Прикрепленные файлы:');
+        $('.attach__up_start').css('display','none');
+        
+      if (e.target.value) { // если value инпута не пустое
+        fileName = e.target.value.split('\\').pop(); // оставляем только имя файла и записываем в переменную
+      }
+      if (fileName) { // если имя файла не пустое
+        item.find('.attach__name').text(fileName); // подставляем в поле имя файла
+        if (!item.hasClass(attachedClass)) { // если в поле до этого не было файла
+          item.addClass(attachedClass); // отмечаем поле классом
+          fieldsAttached++;
+        }
+        if (fields < 5 && fields == fieldsAttached) { // если полей меньше 5 и кол-во полей равно
+          item.after($(newItem)); // добавляем новое поле
+          fields++;
+        }
+      } else { // если имя файла пустое
+        if (fields == fieldsAttached + 1) {
+          item.remove(); // удаляем поле
+          fields--;
+        } else {
+          item.replaceWith($(newItem)); // заменяем поле на "чистое"
+        }
+        fieldsAttached--;
+  
+        if (fields == 1) { // если поле осталось одно
+          attach.find('.attach__up').text('Загрузить файл'); // меняем текст
+        }
+      }
+    });
+  
+    // При нажатии на "Удалить"
+    attach.on('click', '.attach__delete', function() {
+      var item = $(this).closest('.' + fieldClass);
+      if (fields > fieldsAttached) { // если полей больше, чем загруженных файлов
+        item.remove(); // удаляем поле
+        fields--;
+      } else { // если равно
+        item.after($(newItem)); // добавляем новое поле
+        item.remove(); // удаляем старое
+      }
+      fieldsAttached--;
+      if (fields == 1) { // если поле осталось одно
+        attach.find('.attach__up').text('Загрузить файл'); // меняем текст
+      }
+    });
+  });
