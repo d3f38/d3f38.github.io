@@ -79,15 +79,11 @@ h2 {
 
 
 
-.field-block label, .field-block .field {
+.field-block .field {
 	display: block;
 	width: 100%;
 }
 
-.field-block label {
-	margin-bottom: 8px;
-	font-weight: bold;
-}
 
 .field-block .field {
 	font-size: 13px;
@@ -160,11 +156,34 @@ h2 {
 	right: 20px;
 }  
 
+.field-block label {
+	color: #007c0f;
+	font-size: 13px;
+	position: absolute;
+	top: 11px;
+	left: 21px;
+	color: #111111;
+	font-weight: normal;
+	transition: .3s;
+}  
+
+.label-file {
+	
+}
+
+.field:focus~.form-label,
+.field:not(:focus):valid~.form-label {
+	position: absolute;
+	top: -15px;
+	left: 0;
+	font-size: 10px;
+}
+
 #check-1, #check-2, #check-3, #check-4, #check-5 {
 	display: none;
 }
 
-#valid {
+.valid {
 	color: #9f0000;
 	font-size: 10px;
 	position: absolute;
