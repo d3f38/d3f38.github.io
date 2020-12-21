@@ -88,7 +88,7 @@ $(document).ready(function () {
           `<div class="popup">
           
             <div class="popup__overlay">
-              <div id="snow"></div>
+              
             </div>
             <div class="popup__wrapper">
             <div class="popup__content">

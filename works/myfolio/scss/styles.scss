@@ -22,8 +22,6 @@ div {
     align-items: center;
     justify-content: center;
 
-    background-image: url("./../images/bg_header.png");
-
     @media (max-width: 767px) {
       padding: 20px;
     }
@@ -129,11 +127,13 @@ div {
     margin: 0 0 24px;
     font-size: 18px;
     line-height: 22px;
+    padding: 0 20px;
   }
   @media (min-width: 768px) and (max-width: 1199px) {
     margin: 0 0 40px;
+    padding: 0 40px;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 46px;
   }
   @media (min-width: 1200px) and (max-width: 1599px) {
     margin: 0 0 47px;
@@ -251,6 +251,17 @@ div {
     @media (max-width: 767px) {
       transform: scale(0.8) translate(-20px, 5px);
     }
+
+    @media (min-width: 768px) {
+      transform: scale(0.8) translate(-20px, 5px);
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      transform: scale(0.8) translate(-20px, 5px);
+    }
+    @media (min-width: 1600px) {
+      transform: scale(0.8) translate(-40px, 15px);
+    }
   }
 
   &__line-1,
@@ -270,6 +281,7 @@ div {
   position: relative;
   width: 33%;
   text-align: center;
+  cursor: pointer;
 
   @media (min-width: 1024px) {
     &:hover &__button {
@@ -293,10 +305,7 @@ div {
 
   &__image {
     height: 100%;
-
-    @media (max-width: 767px) {
-      max-width: auto;
-    }
+    object-fit: contain;
   }
 
   &__button {
@@ -473,6 +482,16 @@ div {
   background: rgba(0, 0, 0, 0.35);
 }
 
+.snowContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  pointer-events: none;
+}
+
 #snow {
   width: 100%;
   height: 100%;
@@ -576,6 +595,7 @@ div {
     margin-bottom: 16px;
     font-size: 18px;
     line-height: 21px;
+    font-weight: normal;
     text-align: center;
     font-family: "Lato", sans-serif;
   }
