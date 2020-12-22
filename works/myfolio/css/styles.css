@@ -154,7 +154,7 @@ div {
       .houses__wrapper {
         width: 1200px;
         padding: 40px;
-        background-size: cover;
+        background-size: 1100px;
         background-position: 50px 0px; } }
     @media (min-width: 1600px) {
       .houses__wrapper {
@@ -213,16 +213,16 @@ div {
     position: relative; }
     @media (max-width: 767px) {
       .houses__line-1 .houses__subline:last-child .house:nth-child(2) img {
-        transform: scale(0.8) translate(-20px, 5px); } }
+        transform: scale(1) translate(0px, 10px); } }
     @media (min-width: 768px) {
       .houses__line-1 .houses__subline:last-child .house:nth-child(2) img {
-        transform: scale(0.8) translate(-20px, 5px); } }
+        transform: scale(1) translate(0px, 10px); } }
     @media (min-width: 1200px) and (max-width: 1599px) {
       .houses__line-1 .houses__subline:last-child .house:nth-child(2) img {
-        transform: scale(0.8) translate(-20px, 5px); } }
+        transform: scale(1) translate(-20px, 5px); } }
     @media (min-width: 1600px) {
       .houses__line-1 .houses__subline:last-child .house:nth-child(2) img {
-        transform: scale(0.8) translate(-40px, 15px); } }
+        transform: scale(1) translate(-20px, 20px); } }
   @media (max-width: 767px) {
     .houses__line-1, .houses__line-2, .houses__line-3, .houses__line-4 {
       flex-wrap: wrap; } }
@@ -289,6 +289,297 @@ div {
     .house__button::after {
       transform: skew(-35deg);
       bottom: 0; }
+
+@media (max-width: 767px) {
+  .house[data-id="1"] img {
+    transform: scale(1.2) translate(0, 10px); } }
+
+@media (min-width: 768px) {
+  .house[data-id="1"] img {
+    transform: scale(1.2) translate(0, -5px); } }
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .house[data-id="1"] img {
+    transform: scale(1.2) translate(0, 10px); } }
+
+@media (min-width: 1600px) {
+  .house[data-id="1"] img {
+    transform: scale(1.2) translate(0, -10px); } }
+
+.house[data-id="1"]::after {
+  content: "";
+  position: absolute;
+  left: 68%;
+  display: block;
+  background-image: url("./../images/add1.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="1"]::after {
+      width: 37px;
+      height: 45px;
+      top: 33px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="1"]::after {
+      width: 61px;
+      height: 55px;
+      top: 80px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="1"]::after {
+      width: 108px;
+      height: 100px;
+      top: 48px; } }
+
+.house[data-id="3"]::after {
+  content: "";
+  position: absolute;
+  left: 89%;
+  display: block;
+  background-image: url("./../images/add3.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="3"]::after {
+      width: 45.13px;
+      height: 27.53px;
+      top: 38px;
+      left: 62px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="3"]::after {
+      width: 61px;
+      height: 55px;
+      top: 76px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="3"]::after {
+      width: 100px;
+      height: 61px;
+      top: 85px; } }
+
+.house[data-id="6"]::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  display: block;
+  background-image: url("./../images/add6.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="6"]::after {
+      width: 36.56px;
+      height: 45.13px;
+      top: 21px;
+      left: 3px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="6"]::after {
+      width: 46.56px;
+      height: 60.13px;
+      top: 57px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="6"]::after {
+      width: 81px;
+      height: 100px;
+      top: 47px; } }
+
+.house[data-id="8"]::after {
+  content: "";
+  position: absolute;
+  left: -12px;
+  display: block;
+  background-image: url("./../images/add8.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="8"]::after {
+      width: 31.14px;
+      height: 31.14px;
+      top: 21px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="8"]::after {
+      width: 46.56px;
+      height: 60.13px;
+      top: 57px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="8"]::after {
+      width: 69px;
+      height: 69px;
+      top: 61px; } }
+
+.house[data-id="10"]::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  display: block;
+  background-image: url("./../images/add10.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="10"]::after {
+      width: 23px;
+      height: 23px;
+      top: 45px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="10"]::after {
+      width: 40px;
+      height: 40px;
+      top: 80px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="10"]::after {
+      width: 50px;
+      height: 50px;
+      top: 100px; } }
+
+.house[data-id="12"]::after {
+  content: "";
+  position: absolute;
+  left: -34px;
+  display: block;
+  background-image: url("./../images/add12.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="12"]::after {
+      width: 58.67px;
+      height: 45.13px;
+      top: 21px;
+      left: -22px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="12"]::after {
+      width: 78.67px;
+      height: 55.13px;
+      top: 67px;
+      left: -7px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="12"]::after {
+      width: 130px;
+      height: 100px;
+      top: 74px; } }
+
+.house[data-id="13"]::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  display: block;
+  background-image: url("./../images/add13.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="13"]::after {
+      width: 45.56px;
+      height: 68.13px;
+      top: 5px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="13"]::after {
+      width: 55.56px;
+      height: 88.13px;
+      top: 42px;
+      right: 7px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="13"]::after {
+      width: 100px;
+      height: 150px;
+      top: 23px; } }
+
+.house[data-id="15"]::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  display: block;
+  background-image: url("./../images/add15.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="15"]::after {
+      width: 43.33px;
+      height: 30.24px;
+      top: 36px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="15"]::after {
+      width: 56.33px;
+      height: 30.24px;
+      top: 79px;
+      right: 2px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="15"]::after {
+      width: 96px;
+      height: 67px;
+      top: 89px; } }
+
+.house[data-id="17"]::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  display: block;
+  background-image: url("./../images/add17.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="17"]::after {
+      width: 32.95px;
+      height: 35.65px;
+      top: 37px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="17"]::after {
+      width: 56.33px;
+      height: 30.24px;
+      top: 79px;
+      right: 2px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="17"]::after {
+      width: 63px;
+      height: 73px;
+      top: 67px; } }
+
+.house[data-id="19"]::after {
+  content: "";
+  position: absolute;
+  left: -34px;
+  display: block;
+  background-image: url("./../images/add19.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="19"]::after {
+      width: 43.78px;
+      height: 40.62px;
+      top: 31px;
+      left: 76px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="19"]::after {
+      width: 76.33px;
+      height: 50.24px;
+      top: 73px;
+      left: -6px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="19"]::after {
+      width: 97px;
+      height: 90px;
+      top: 74px; } }
+
+.house[data-id="21"]::after {
+  content: "";
+  position: absolute;
+  right: -35px;
+  display: block;
+  background-image: url("./../images/add21.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .house[data-id="21"]::after {
+      width: 52.35px;
+      height: 79.68px;
+      top: -9px;
+      left: -6px; } }
+  @media (min-width: 769px) and (max-width: 1599px) {
+    .house[data-id="21"]::after {
+      width: 76.33px;
+      height: 110.24px;
+      top: 6px;
+      right: -19px; } }
+  @media (min-width: 1600px) {
+    .house[data-id="21"]::after {
+      width: 112px;
+      height: 188px;
+      top: -10px; } }
 
 .footer {
   display: flex;
