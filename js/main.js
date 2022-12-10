@@ -6,7 +6,6 @@ const data = [
     slides: [
       {
         image: "images/popups/1/slide1.jpg",
-        comment: "",
       },
     ],
   },
@@ -17,11 +16,9 @@ const data = [
   slides: [
     {
       image: "images/popups/6/slide1.jpg",
-      comment: "",
     },
     {
       image: "images/popups/6/slide2.jpg",
-      comment: "",
     }
   ],
   },
@@ -117,10 +114,18 @@ const data = [
   },
 ];
 
+document.addEventListener('DOMContentLoaded', () => {
+  const loader = document.querySelector(".loader");
+
+  setTimeout(() => {
+    loader.classList.remove("loading");
+  }, 1000);
+  
+});
+
 $(document).ready(function () {
   const popup = document.querySelector(".popup");
   const windows = [].slice.call(document.querySelectorAll(".window"));
-  // const openHouseBtn = document.querySelector(".open-house");
 
   let popupContent = '';
   
@@ -187,20 +192,13 @@ $(document).ready(function () {
   const closePopup = (popup) => {
     popup.remove();
     document.body.style.overflow = "visible";
-    // openHouseBtn.classList.remove("open-house--active");
-    // openHouseBtn.removeEventListener("click", houseClickHandler)
   }
 
   windows.forEach((item) => {
     item.addEventListener("click", (e) => {
       const windowId = e.target.closest(".window").id;
-      // if (activeHouse) activeHouse.classList.remove("active-link"); 
-
-      // e.target.closest(".houses__button").classList.add("active-link");
 
       popupContent = data.find((item) => `window-${item.id}` == windowId);
-
-      
 
       if (window.matchMedia("(min-width: 1280px)").matches) {
           houseClickHandler();
@@ -209,17 +207,6 @@ $(document).ready(function () {
           houseClickHandler();
         }, 500);
       }
-
-      
-
-      // if (window.matchMedia("(min-width: 1280px)").matches) {
-      //   houseClickHandler();
-      // } else {
-      //   openHouseBtn.classList.add("open-house--active");
-      //   openHouseBtn.textContent = `Посетить дом № ${houseId}`;
-      //   openHouseBtn.addEventListener("click", houseClickHandler);
-      // }
-
     });
   });
 
