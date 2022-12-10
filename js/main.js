@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     loader.classList.remove("loading");
-  }, 1000);
+  }, 2000);
   
 });
 
