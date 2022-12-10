@@ -17,6 +17,7 @@ body {
     background: #4B68E3;
     opacity: 0;
     transition: opacity 0.3s;
+    pointer-events: none;
 }
 
 .loader.loading {
