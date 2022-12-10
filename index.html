@@ -1,19 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>hex2048</title>
-    <meta name="Description" content="hex2048" />
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="icon" href="./favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Новый год вашему дому!</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/styles_new.css" />
+	<link rel="stylesheet" type="text/css" href="css/slider.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGQMFZLKW9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	 
+	  gtag('config', 'G-MGQMFZLKW9');
+	</script> -->
+	<!-- Yandex.Metrika counter -->
+	<!-- <script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(86898318, "init", {
+				clickmap:true,
+				trackLinks:true,
+				accurateTrackBounce:true,
+				webvisor:true
+		});
+	</script> -->
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/86898318" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
-    <div id="app"></div>
-    <script src="./main.js"></script>
+	<div class="cursor"></div>
+	<header class="header">
+		<div class="container">
+			<div class="logos">
+				<img class="main-logo" src="images/logo_diversity.svg" alt="logo divercity">
+				<div class="logos__other">
+					<img class="second-logo" src="images/logo_diversity_small.svg" alt="logo divercity">
+					<img class="second-logo" src="images/logo_rubiq.svg" alt="logo divercity">
+					<img class="second-logo" src="images/logo_key_digital.svg" alt="logo divercity">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="banner">
+			
+			<div class="container">
+				<img class="tree" src="images/TREE.svg">
+				<img class="tree-mobile" src="images/TREE-mobile.svg">
+				<div class="text-container">
+					<h1 class="title">В каждом доме<br/>
+						на Новый год<br/>
+						ждут света и&nbsp;тепла!</h1>
+					<h2 class="subtitle">Мы прокладываем<br/>
+						кратчайший путь к&nbsp;сердцам</h2>
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<div class="windows">
+			<div class="windows__container container">
+				<p class="windows__text">
+					Посетите каждый дом и&nbsp;разделите радость маленьких добрых дел
+				</p>
+				<div class="window" id="window-1">
+					<img class="glow" src="images/windows/glowing/1.png">
+					<img class="frame" src="images/windows/1.png">
+				</div>
+				<div class="window" id="window-2">
+					<img class="glow" src="images/windows/glowing/2.png">
+					<img class="frame" src="images/windows/2.png">
+				</div>
+				<div class="window" id="window-3">
+					<img class="glow" src="images/windows/glowing/3.png">
+					<img class="frame" src="images/windows/3.png">
+				</div>
+				<div class="window" id="window-4">
+					<img class="glow" src="images/windows/glowing/4.png">
+					<img class="frame" src="images/windows/4.png">
+				</div>
+				<div class="window" id="window-5">
+					<img class="glow" src="images/windows/glowing/5.png">
+					<img class="frame" src="images/windows/5.png">
+				</div>
+				<div class="window" id="window-6">
+					<img class="glow" src="images/windows/glowing/6.png">
+					<img class="frame" src="images/windows/6.png">
+				</div>
+				<div class="window" id="window-7">
+					<img class="glow" src="images/windows/glowing/7.png">
+					<img class="frame" src="images/windows/7.png">
+				</div>
+				<div class="window" id="window-8">
+					<img class="glow" src="images/windows/glowing/8.png">
+					<img class="frame" src="images/windows/8.png">
+				</div>
+				<div class="window" id="window-9">
+					<img class="glow" src="images/windows/glowing/9.png">
+					<img class="frame" src="images/windows/9.png">
+				</div>
+				<div class="window" id="window-10">
+					<img class="glow" src="images/windows/glowing/10.png">
+					<img class="frame" src="images/windows/10.png">
+				</div>
+				<div class="window" id="window-11">
+					<img class="glow" src="images/windows/glowing/11.png">
+					<img class="frame" src="images/windows/11.png">
+				</div>
+				<div class="window" id="window-12">
+					<img class="glow" src="images/windows/glowing/12.png">
+					<img class="frame" src="images/windows/12.png">
+				</div>
+				<div class="window" id="window-13">
+					<img class="glow" src="images/windows/glowing/13.png">
+					<img class="frame" src="images/windows/13.png">
+				</div>
+				<div class="window" id="window-14">
+					<img class="glow" src="images/windows/glowing/14.png">
+					<img class="frame" src="images/windows/14.png">
+				</div>
+				<div class="window" id="window-15">
+					<img class="glow" src="images/windows/glowing/15.png">
+					<img class="frame" src="images/windows/15.png">
+				</div>
+				<div class="window" id="window-16">
+					<img class="glow" src="images/windows/glowing/16.png">
+					<img class="frame" src="images/windows/16.png">
+				</div>
+				<div class="window" id="window-17">
+					<img class="glow" src="images/windows/glowing/17.png">
+					<img class="frame" src="images/windows/17.png">
+				</div>
+				<div class="window" id="window-18">
+					<img class="glow" src="images/windows/glowing/18.png">
+					<img class="frame" src="images/windows/18.png">
+				</div>
+				<div class="window" id="window-19">
+					<img class="glow" src="images/windows/glowing/19.png">
+					<img class="frame" src="images/windows/19.png">
+				</div>
+				<div class="window" id="window-20">
+					<img class="glow" src="images/windows/glowing/20.png">
+					<img class="frame" src="images/windows/20.png">
+				</div>
+			</div>
+			
+			<!-- <div class="houses">
+				<div class="houses__image">
+				</div>
+				<div class="houses__lighter"></div>
+				
+				<button class="houses__button" data-id="1">Посетить</button>
+				<button class="houses__button" data-id="2">Посетить</button>
+				<button class="houses__button" data-id="3">Посетить</button>
+				<button class="houses__button" data-id="4">Посетить</button>
+				<button class="houses__button" data-id="5">Посетить</button>
+				<button class="houses__button" data-id="6">Посетить</button>
+				<button class="houses__button" data-id="7">Посетить</button>
+				<button class="houses__button" data-id="8">Посетить</button>
+				<button class="houses__button" data-id="9">Посетить</button>
+				<button class="houses__button" data-id="10">Посетить</button>
+				<button class="houses__button" data-id="11">Посетить</button>
+				<button class="houses__button" data-id="12">Посетить</button>
+				<button class="houses__button" data-id="13">Посетить</button>
+				<button class="houses__button" data-id="14">Посетить</button>
+				<button class="houses__button" data-id="15">Посетить</button>
+				<button class="houses__button" data-id="16">Посетить</button>
+				<button class="houses__button" data-id="17">Посетить</button>
+				<button class="houses__button" data-id="18">Посетить</button>
+				<button class="houses__button" data-id="19">Посетить</button>
+				<button class="houses__button" data-id="20">Посетить</button>
+				<button class="houses__button" data-id="21">Посетить</button>
+			</div> -->
+			
+
+				<!-- start -->
+
+			
+		</div>
+		<div class="snowContainer">
+
+			<div id="snow"></div>
+	
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<img class="footer-bg" src="images/footer-bg.svg" alt="footer bg">
+		</div>
+	</footer>
+	
+
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script src="js/main.js"></script>
 </body>
 
 </html>

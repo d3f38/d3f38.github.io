@@ -1,0 +1,87 @@
+.slider {
+    width: 400px!important;
+    margin: 0 auto;
+    color: transparent;
+}
+@media (max-width:767px) {
+    .slider {
+        width: 100%!important;
+        padding-bottom: 0;
+    }
+}
+.slider .slick-next,
+.slider .slick-prev {
+    z-index: 10;
+    height: 60px;
+    cursor: pointer;
+}
+@media (max-width:767px) {
+    .slider .slick-next,
+    .slider .slick-prev {
+        bottom: -15px;
+        width: 50px;
+        height: 40px;
+    }
+}
+.slider .slick-next:focus,
+.slider .slick-next:hover,
+.slider .slick-prev:focus,
+.slider .slick-prev:hover {
+    color: transparent;
+    outline: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='24' viewBox='0 0 14 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.0019 23L1.00188 12M12.709 1L1.70899 12' stroke='black'/%3E%3C/svg%3E%0A");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+.slider .slick-next:focus,
+.slider .slick-next:hover {
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='24' viewBox='0 0 13 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.35359 1L12.3536 12M0.646484 23L11.6465 12' stroke='black'/%3E%3C/svg%3E%0A");
+}
+.slider .slick-next,
+.slider .slick-prev {
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.slider .slick-prev {
+    left: -30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='24' viewBox='0 0 14 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.0019 23L1.00188 12M12.709 1L1.70899 12' stroke='black'/%3E%3C/svg%3E%0A");
+
+}
+.slider .slick-next {
+    right: -30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='24' viewBox='0 0 13 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.35359 1L12.3536 12M0.646484 23L11.6465 12' stroke='black'/%3E%3C/svg%3E%0A");
+}
+.slider .slick-next:before,
+.slider .slick-prev:before {
+    display: none;
+}
+.slick-slider {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.slide {
+    outline: 0;
+    width: 100%;
+}
+.slide__image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.slide__image {
+    width: 400px;
+}
+@media (max-width:767px) {
+    .slide__image {
+        width: 100%;
+    }
+
+    .slider .slick-next, .slider .slick-prev {
+        width: 28px;
+    }
+
+    .slider .slick-prev {
+        left: -23px;
+    }    
+}
