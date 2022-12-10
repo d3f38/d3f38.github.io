@@ -4,16 +4,6 @@ body {
     cursor: none;
 }
 
-@font-face {
-    font-family: "Lato";
-    src: url("../fonts/Lato/Lato-Bold.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url("../fonts/Lato/Lato-Regular.ttf") format('truetype');
-}
-
 @media screen and (min-width: 1025px) {
     .cursor {
         z-index: 999;
@@ -99,7 +89,7 @@ main {
     position: relative;
     z-index: 2;
     padding-left: 85px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -721,7 +711,7 @@ main {
 
 .popup__text {
     text-align: center;
-    font-family: "Lato", sans-serif;
+    font-family: 'Raleway';
 
     font-size: 20px;
     line-height: 34px;
@@ -730,7 +720,7 @@ main {
 .popup__address,
 .popup__name {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -747,7 +737,7 @@ main {
 .popup__suggestion {
     margin-top: 0;
     margin-bottom: 38px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -863,6 +853,7 @@ main {
         right: 0;
         width: 100%;
         bottom: -325px;
+        transform: scale(1.5);
     }
 
     .second-logo:nth-child(1) {
@@ -879,6 +870,33 @@ main {
 
     .logos__other img {
         margin-left: 30px;
+    }
+
+    .footer {
+        top: 5px;
+        background-position: 0 25px;
+    }
+
+    .footer::before {
+        height: 35px;
+    }
+
+    .footer::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        background: rgba(253, 184, 66, 0.6);
+        filter: blur(68.8355px);
+    }
+
+    .footer__container {
+        display: flex;
     }
 
     /* windows */
@@ -904,7 +922,7 @@ main {
     }
 
     .window .glow {
-        opacity: 0.5;
+        opacity: 0;
     }
 
     #window-1 {

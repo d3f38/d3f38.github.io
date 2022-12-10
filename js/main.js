@@ -5,19 +5,25 @@ const data = [
     address: "г. Калуга, ул.&nbsp;Кубяка, д.&nbsp;20",
     slides: [
       {
-        image: "images/popups/21/slide1.jpg",
+        image: "images/popups/1/slide1.jpg",
         comment: "",
       },
-      {
-        image: "images/popups/21/slide2.jpg",
-        comment: "",
-      }
     ],
   },
   {
   id: 2,
   name: "Калужский центр социальной адаптации для лиц без определенного места жительства и&nbsp;занятий",
   address: "Калужская обл., пос. Северный, ул.&nbsp;Дальняя, д.&nbsp;3",
+  slides: [
+    {
+      image: "images/popups/6/slide1.jpg",
+      comment: "",
+    },
+    {
+      image: "images/popups/6/slide2.jpg",
+      comment: "",
+    }
+  ],
   },
   {
   id: 3,
