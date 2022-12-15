@@ -1,7 +1,7 @@
 body {
     background: #4B68E3;
     margin: 0;
-    cursor: none;
+
 }
 
 .loader {
@@ -43,8 +43,9 @@ body {
         z-index: 999;
         position: fixed;
         background-image: url("../images/cursor.svg");
-        width: 74px;
-        height: 70px;
+        background-size: 30px 28px;
+        width: 30px;
+        height: 28px;
         pointer-events: none;
     }
 }
@@ -218,6 +219,364 @@ main {
     background-repeat: repeat-x;
 }
 
+
+
+.glow-container {
+
+}
+
+
+@keyframes glow-pulsate {
+    0% {
+        transform: scale(0.2);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.2);
+        opacity: 0.5;
+    }
+}
+
+.tree-glow {
+    position: absolute;
+    z-index: 20;
+    width: 33px;
+    height: 33px;
+    
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: glow-pulsate 5s infinite;
+}
+
+#tree-glow-1 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 332px;
+    top: 142px;
+    animation-delay: 1s;
+}
+
+#tree-glow-2 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 263px;
+    top: 184px;
+    animation-delay: 2s;
+}
+
+#tree-glow-3 {
+    background-image: url("../images/glow-white.svg");
+    right: 323px;
+    top: 200px;
+    animation-delay: 0.5s;
+}
+
+#tree-glow-4 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 445px;
+    top: 189px;
+    animation-delay: 3s;
+}
+
+#tree-glow-5 {
+    background-image: url("../images/glow-white.svg");
+    right: 427px;
+    top: 225px;
+}
+
+#tree-glow-6 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 388px;
+    top: 243px;
+    animation-delay: 1s;
+}
+
+#tree-glow-7 {
+    background-image: url("../images/glow-white.svg");
+    right: 214px;
+    top: 247px;
+    animation-delay: 2s;
+}
+
+#tree-glow-8 {
+    background-image: url("../images/glow-white.svg");
+    right: 214px;
+    top: 247px;
+    animation-delay: 2s;
+}
+
+#tree-glow-9 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 242px;
+    top: 291px;
+    animation-delay: 2s;
+}
+
+#tree-glow-10 {
+    background-image: url("../images/glow-white.svg");
+    right: 276px;
+    top: 304px;
+    animation-delay: 2s;
+}
+
+#tree-glow-11 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 378px;
+    top: 319px;
+    animation-delay: 2s;
+}
+
+#tree-glow-12 {
+    background-image: url("../images/glow-white.svg");
+    right: 475px;
+    top: 306px;
+    animation-delay: 2s;
+}
+
+#tree-glow-13 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 427px;
+    top: 371px;
+    animation-delay: 2s;
+}
+
+#tree-glow-14 {
+    background-image: url("../images/glow-white.svg");
+    right: 245px;
+    top: 376px;
+    animation-delay: 2s;
+}
+
+#tree-glow-15 {
+    background-image: url("../images/glow-white.svg");
+    right: 217px;
+    top: 417px;
+    animation-delay: 2s;
+}
+
+#tree-glow-16 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 323px;
+    top: 447px;
+    animation-delay: 2s;
+}
+
+#tree-glow-17 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 409px;
+    top: 453px;
+    animation-delay: 2s;
+}
+
+#tree-glow-18 {
+    background-image: url("../images/glow-yellow.svg");
+    right: 489px;
+    top: 494px;
+    animation-delay: 2s;
+}
+
+#tree-glow-19 {
+    background-image: url("../images/glow-white.svg");
+    right: 375px;
+    top: 541px;
+    animation-delay: 2s;
+}
+
+@media screen and (max-width: 1024px) {
+    #tree-glow-1 {
+        right: 329px;
+        top: 79px;
+    }
+    
+    #tree-glow-2 {
+        right: 279px;
+        top: 110px;
+    }
+    
+    #tree-glow-3 {
+        right: 322px;
+        top: 121px;
+    }
+    
+    #tree-glow-4 {
+        right: 411px;
+        top: 113px;
+    }
+    
+    #tree-glow-5 {
+        right: 398px;
+        top: 139px;
+    }
+    
+    #tree-glow-6 {
+        right: 369px;
+        top: 152px;
+    }
+    
+    #tree-glow-7 {
+        right: 243px;
+        top: 155px;
+    }
+    
+    #tree-glow-8 {
+        right: 243px;
+        top: 155px;
+    }
+
+    #tree-glow-9 {
+        right: 263px;
+        top: 187px;
+    }
+
+    #tree-glow-10 {
+        right: 288px;
+        top: 196px;
+    }
+
+    #tree-glow-11 {
+        right: 363px;
+        top: 207px;
+    }
+    
+    #tree-glow-12 {
+        right: 433px;
+        top: 198px;
+    }
+    
+    #tree-glow-13 {
+        right: 398px;
+        top: 245px;
+    }
+    
+    #tree-glow-14 {
+        right: 265px;
+        top: 249px;
+    }
+    
+    #tree-glow-15 {
+        right: 245px;
+        top: 278px;
+    }
+    
+    #tree-glow-16 {
+        right: 323px;
+        top: 300px;    
+    }
+    
+    #tree-glow-17 {
+        right: 385px;
+        top: 305px;
+    }
+    
+    #tree-glow-18 {
+        right: 443px;
+        top: 334px;
+    }
+    
+    #tree-glow-19 {
+        right: 341px;
+        top: 371px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #tree-glow-1 {
+        right: 174px;
+        top: 416px;
+    }
+    
+    #tree-glow-2 {
+        right: 141px;
+        top: 440px;
+    }
+    
+    #tree-glow-3 {
+        right: 170px;
+        top: 447px;
+    }
+    
+    #tree-glow-4 {
+        right: 234px;
+        top: 443px;
+    }
+    
+    #tree-glow-5 {
+        right: 225px;
+        top: 460px;
+    }
+    
+    #tree-glow-6 {
+        right: 204px;
+        top: 470px;
+    }
+    
+    #tree-glow-7 {
+        right: 112px;
+        top: 472px;
+    }
+    
+    #tree-glow-8 {
+        right: 112px;
+        top: 472px;
+    }
+
+    #tree-glow-9 {
+        right: 127px;
+        top: 496px;
+    }
+
+    #tree-glow-10 {
+        right: 144px;
+        top: 503px;
+    }
+
+    #tree-glow-11 {
+        right: 198px;
+        top: 511px;
+    }
+    
+    #tree-glow-12 {
+        right: 250px;
+        top: 504px;
+    }
+    
+    #tree-glow-13 {
+        right: 225px;
+        top: 538px;
+    }
+    
+    #tree-glow-14 {
+        right: 128px;
+        top: 541px;
+    }
+    
+    #tree-glow-15 {
+        right: 200px;
+        top: 582px;
+    }
+    
+    #tree-glow-16 {
+        right: 270px;
+        top: 573px;
+    }
+    
+    #tree-glow-17 {
+        right: 249px;
+        top: 609px;
+    }
+    
+    #tree-glow-18 {
+        right: 223px;
+        top: 621px;
+    }
+    
+    #tree-glow-19 {
+        display: none;
+    }
+}
+
 .tree,
 .tree-mobile {
     position: absolute;
@@ -270,6 +629,7 @@ main {
 .windows {
     display: flex;
     justify-content: center;
+    cursor: none;
 }
 
 .window {
@@ -557,9 +917,9 @@ main {
 .footer {
     position: relative;
     width: 100%;
-    /* background-image: url(../images/footer-bg.svg); */
     background-size: contain;
     background-repeat: no-repeat;
+    cursor: none;
 }
 
 .footer img {
@@ -785,6 +1145,42 @@ main {
     line-height: 16px;
 }
 
+.previous-page {
+    position: absolute;
+    right: 0;
+    top: 93px; 
+    width: 472px;
+    padding: 15px 24px;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FAFAFA;
+    background: linear-gradient(270deg, #4964E6 -77.54%, #FC5B60 100%);
+    border-radius: 0 0 11px 11px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .previous-page {
+        padding: 16px;
+        width: 320px;
+        right: 24px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .previous-page {
+        padding: 8px 16px;
+        top: 42px;
+        right: 0;
+    }
+}
+
 @media (max-width: 767px) {
     .popup__content {
         width: 337px;
@@ -885,7 +1281,7 @@ main {
     .tree-mobile {
         display: block;
         right: 0;
-        width: 100%;
+        width: 400px;
         bottom: -325px;
         transform: scale(1.5);
     }

@@ -130,11 +130,17 @@ $(document).ready(function () {
   let popupContent = '';
   
   function houseClickHandler (evt = undefined) {
+    const cursor = document.querySelector('.cursor');
+
+    if (cursor) {
+      cursor.style.display = "none";
+    }
+
     if(evt && evt.target.classList.contains("open-house--active")){
       evt.target.classList.remove("open-house--active");
     }
-    if (!popup) {
 
+    if (!popup) {
       const slider = popupContent.slides && popupContent.slides.length ? `<div class="slider">
         ${popupContent.slides.map(item => 
           `<div class="slide">
@@ -178,6 +184,8 @@ $(document).ready(function () {
       const closeButton = document.querySelector(".popup__close");
   
       const overlay = document.querySelector(".popup__overlay");
+
+      cursor.style.display = "none";
   
       closeButton.addEventListener("click", () => {
         closePopup(popup)
@@ -192,6 +200,13 @@ $(document).ready(function () {
   const closePopup = (popup) => {
     popup.remove();
     document.body.style.overflow = "visible";
+    popupContent = null;
+
+    const cursor = document.querySelector('.cursor');
+
+    if (cursor) {
+      cursor.style.display = "block";
+    }
   }
 
   windows.forEach((item) => {
@@ -214,19 +229,32 @@ $(document).ready(function () {
     const cursor = document.querySelector('.cursor');
 
     document.addEventListener('mousemove', e => {
-        cursor.setAttribute(
-            'style',
-            `top:  ${e.pageY - window.scrollY - 35}px; left: ${e.pageX - 35}px;`
-        );
 
-        if (e.target.closest(".window")) {
-            cursor
-                .classList
-                .add("animate");
-        } else if (cursor.classList.contains("animate")) {
-            cursor
-                .classList
-                .remove("animate");
+        if (!popupContent) {
+          cursor.style.display = "block";
+
+          cursor.setAttribute(
+            'style',
+            `top:  ${e.pageY - window.scrollY - 14}px; left: ${e.pageX - 14}px;`
+          );
+
+          if (e.target.closest(".window")) {
+              cursor
+                  .classList
+                  .add("animate");
+          } else if (cursor.classList.contains("animate")) {
+              cursor
+                  .classList
+                  .remove("animate");
+          }
+        } else {
+          cursor.style.display = "none";
+        }
+
+        if (e && e.target.closest(".banner")){
+          cursor.style.display = "none";
+        } else if (!popupContent) {
+          cursor.style.display = "block";
         }
     });
   }
