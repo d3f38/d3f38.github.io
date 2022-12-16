@@ -232,7 +232,7 @@ main {
         opacity: 0.5;
     }
     50% {
-        transform: scale(1);
+        transform: scale(3);
         opacity: 1;
     }
     100% {
@@ -332,7 +332,7 @@ main {
     background-image: url("../images/glow-white.svg");
     right: 475px;
     top: 306px;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 #tree-glow-13 {
@@ -346,7 +346,7 @@ main {
     background-image: url("../images/glow-white.svg");
     right: 245px;
     top: 376px;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 #tree-glow-15 {
@@ -367,7 +367,7 @@ main {
     background-image: url("../images/glow-yellow.svg");
     right: 409px;
     top: 453px;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
 }
 
 #tree-glow-18 {
@@ -381,7 +381,7 @@ main {
     background-image: url("../images/glow-white.svg");
     right: 375px;
     top: 541px;
-    animation-delay: 2s;
+    animation-delay: 2.5s;
 }
 
 @media screen and (max-width: 1024px) {
