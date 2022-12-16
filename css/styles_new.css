@@ -232,7 +232,7 @@ main {
         opacity: 0.5;
     }
     50% {
-        transform: scale(3);
+        transform: scale(2);
         opacity: 1;
     }
     100% {
@@ -249,7 +249,7 @@ main {
     
     background-size: cover;
     background-repeat: repeat-x;
-    animation: glow-pulsate 5s infinite;
+    animation: glow-pulsate 3s infinite;
 }
 
 #tree-glow-1 {
