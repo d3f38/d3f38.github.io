@@ -180,6 +180,22 @@ main {
     margin-left: 68px;
 }
 
+.main-logo {
+    width: 177px;
+}
+
+.second-logo:nth-child(1) {
+    width: 95px;
+}
+
+.second-logo:nth-child(2) {
+    width: 105px;
+}
+
+.second-logo:nth-child(3) {
+    width: 57px;
+}
+
 .banner {
     position: relative;
     height: 656px;
@@ -1148,7 +1164,7 @@ main {
 .previous-page {
     position: absolute;
     right: 0;
-    top: 93px; 
+    top: 92.5px; 
     width: 490px;
     padding: 15px 24px;
     box-sizing: border-box;
