@@ -251,7 +251,7 @@ $(document).ready(function () {
           cursor.style.display = "none";
         }
 
-        if (e && e.target.closest(".banner")){
+        if (e?.target.closest(".banner") || e?.target.closest(".previous-page") || e?.target.closest(".header")){
           cursor.style.display = "none";
         } else if (!popupContent) {
           cursor.style.display = "block";
