@@ -4,6 +4,10 @@ body {
 
 }
 
+a {
+    text-decoration:none;    
+}
+
 .loader {
     position: fixed;
     top: 0;
