@@ -90,6 +90,11 @@ main {
     background: #FFFFFF;
 }
 
+.header .container {
+    position: static;
+    
+}
+
 .container {
     position: relative;
     width: 1240px;
@@ -1322,8 +1327,8 @@ main {
 @media screen and (max-width: 767px) {
     .previous-page {
         padding: 8px 16px;
-        top: 47px;
-        right: 0;
+        top: 57px;
+        right: 24px;
     }
 }
 
@@ -1379,10 +1384,13 @@ main {
 
     .header {
         padding: 12px 30px;
+        height: 57px;
+        box-sizing: border-box;
     }
 
     .header .container {
         padding: 0;
+
     }
 
     .main-logo {
