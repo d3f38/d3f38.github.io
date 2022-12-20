@@ -204,6 +204,12 @@ $(document).ready(function () {
 
     const cursor = document.querySelector('.cursor');
 
+    const lightedWindow = document.querySelector(".window.lighted");
+
+    if (lightedWindow) {
+      lightedWindow.classList.remove("lighted");
+    }
+
     if (cursor) {
       cursor.style.display = "block";
     }
@@ -211,7 +217,10 @@ $(document).ready(function () {
 
   windows.forEach((item) => {
     item.addEventListener("click", (e) => {
-      const windowId = e.target.closest(".window").id;
+      const lightedWindow = e.target.closest(".window");
+      const windowId = lightedWindow.id;
+
+      lightedWindow.classList.add("lighted");
 
       popupContent = data.find((item) => `window-${item.id}` == windowId);
 
@@ -251,7 +260,7 @@ $(document).ready(function () {
           cursor.style.display = "none";
         }
 
-        if (e?.target.closest(".banner") || e?.target.closest(".previous-page") || e?.target.closest(".header")){
+        if (e?.target.closest(".banner") || e?.target.closest(".previous-page") || e?.target.closest(".header") || e?.target.closest(".footer__content")){
           cursor.style.display = "none";
         } else if (!popupContent) {
           cursor.style.display = "block";
