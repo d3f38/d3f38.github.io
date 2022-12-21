@@ -253,19 +253,8 @@ $(document).ready(function () {
     }
 
     if (!popup) {
-      const slider =
-        popupContent.slides && popupContent.slides.length
-          ? `<div class="slider">
-              ${popupContent.slides.map(
-                (item) =>
-                  `<div class="slide">
-                  <div class="slide__image-container">
-                    <img class="slide__image" src=${item.image} alt=${item.comment}>
-                  </div>
-                </div>`
-              )}
-            </div>`
-          : "";
+
+      
 
       document.body.insertAdjacentHTML(
         "afterbegin",
@@ -283,7 +272,10 @@ $(document).ready(function () {
   
               <h3 class="popup__title">Наш путь добрых дел!</h3>
 
-              ${slider}
+              <div class="slider">
+
+              </div>
+              
 
               <p class="popup__name">${popupContent.name}</p>
               <p class="popup__address">${popupContent.address}</p>
@@ -295,30 +287,43 @@ $(document).ready(function () {
         </div>`
       );
 
-      
-      $(document).ready(function () {
-        // $(".slider").slick({
-        //   // dots: true,
-        //   infinite: true,
-        //   speed: 300,
-        //   slidesToShow: 1,
-        //   adaptiveHeight: true,
-        // });
-        $('.slider')
-        .on('init', function(slick) {
-            console.log('fired!');
-            $('.slider').fadeIn(3000);
-        })
-        .slick({
-            fade: true,
-            focusOnSelect: true,
-            lazyLoad: 'ondemand',
+      // $(document).ready(function () {
+        $('.slider').slick({
+            lazyLoad: 'progressive',
             infinite: true,
             speed: 300,
             slidesToShow: 1,
-            adaptiveHeight: true,
+            // adaptiveHeight: true,
         });
-      });
+      // });
+
+
+      popupContent.slides.forEach((item) => {
+        $('.slider').slick('slickAdd', `
+          <div class="slide">
+            <div class="slide__image-container">
+              <img class="slide__image" src=${item.image} alt=${item.comment}>
+            </div>
+          </div>
+        `);
+      }
+      
+          
+      );
+
+      // const slider =
+      //   popupContent.slides && popupContent.slides.length
+      //     ? `<div class="slider">
+      //         ${popupContent.slides.map(
+      //           (item) =>
+      //             `<div class="slide">
+      //             <div class="slide__image-container">
+      //               <img class="slide__image" src=${item.image} alt=${item.comment}>
+      //             </div>
+      //           </div>`
+      //         )}
+      //       </div>`
+      //     : "";
 
       document.body.style.overflow = "hidden";
       const popup = document.querySelector(".popup");
