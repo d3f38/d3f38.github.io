@@ -256,15 +256,15 @@ $(document).ready(function () {
       const slider =
         popupContent.slides && popupContent.slides.length
           ? `<div class="slider">
-        ${popupContent.slides.map(
-          (item) =>
-            `<div class="slide">
-            <div class="slide__image-container">
-              <img class="slide__image" src=${item.image} alt=${item.comment}>
-            </div>
-          </div>`
-        )}
-      </div>`
+              ${popupContent.slides.map(
+                (item) =>
+                  `<div class="slide">
+                  <div class="slide__image-container">
+                    <img class="slide__image" src=${item.image} alt=${item.comment}>
+                  </div>
+                </div>`
+              )}
+            </div>`
           : "";
 
       document.body.insertAdjacentHTML(
@@ -295,7 +295,15 @@ $(document).ready(function () {
         </div>`
       );
 
+      
       $(document).ready(function () {
+        $(".slider").slick({
+          // dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+        });
         $(".slider").slick({
           // dots: true,
           infinite: true,
