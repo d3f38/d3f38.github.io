@@ -100,3 +100,11 @@
         left: -23px;
     }    
 }
+
+.slick-track {
+    display: flex !important;
+  }
+  
+.slick-slide {
+    height: auto !important;
+}
