@@ -297,19 +297,26 @@ $(document).ready(function () {
 
       
       $(document).ready(function () {
-        $(".slider").slick({
-          // dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          adaptiveHeight: true,
-        });
-        $(".slider").slick({
-          // dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          adaptiveHeight: true,
+        // $(".slider").slick({
+        //   // dots: true,
+        //   infinite: true,
+        //   speed: 300,
+        //   slidesToShow: 1,
+        //   adaptiveHeight: true,
+        // });
+        $('.slider')
+        .on('init', function(slick) {
+            console.log('fired!');
+            $('.slider').fadeIn(3000);
+        })
+        .slick({
+            fade: true,
+            focusOnSelect: true,
+            lazyLoad: 'ondemand',
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
         });
       });
 
