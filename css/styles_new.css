@@ -87,12 +87,9 @@ main {
     display: flex;
     justify-content: center;
     padding: 24px 0;
+    height: 120px;
+    box-sizing: border-box;
     background: #FFFFFF;
-}
-
-.header .container {
-    position: static;
-    
 }
 
 .container {
@@ -1252,6 +1249,7 @@ main {
     line-height: 54px;
     text-align: center;
     color: #4B68E3;
+    white-space: nowrap;
 }
 
 .popup__text {
@@ -1298,8 +1296,8 @@ main {
 
 .previous-page {
     position: absolute;
-    right: 0;
-    top: 96.5px;
+    right: 24px;
+    top: 96px;
     width: 490px;
     padding: 15px 24px;
     box-sizing: border-box;
@@ -1327,21 +1325,25 @@ main {
 @media screen and (max-width: 767px) {
     .previous-page {
         padding: 8px 16px;
-        top: 57px;
-        right: 24px;
+        top: 45px;
+        right: 0;
+        font-size: 13px;
+        line-height: 20px;
     }
 }
 
 @media (max-width: 767px) {
     .popup__content {
         width: 337px;
-        height: 100%;
+        height: auto;
         padding: 24px 24px 12px;
         box-sizing: border-box;
         justify-content: flex-start;
     }
 
     .popup__wrapper {
+        display: flex;
+        align-items: center;
         padding: 19px;
         height: 100%;
         box-sizing: border-box;
